@@ -4,8 +4,8 @@
     "title": "Exercise 1: Future Tenses Contrast",
     "tag": "B1 - Grammar",
     "block": "Class 4 · Homework",
-    "inst": "Elige la forma de futuro correcta. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).",
-    "theory": "<p><b>Futuro: will, be going to y Present Continuous</b></p>\n<table><tr><th>Forma</th><th>Cuándo se usa</th><th>Ejemplo</th></tr>\n<tr><td><b>will</b> + verbo</td><td>Decisiones espontáneas (las tomás en el momento), predicciones u opiniones (<i>I think…, probably…</i>) y promesas</td><td>“It's hot. I'll open the window.”<br>“I think she will win.”</td></tr>\n<tr><td><b>be going to</b> + verbo</td><td>Planes o intenciones que ya estaban decididos antes de hablar; predicciones basadas en algo que ves ahora</td><td>“I'm going to study tonight.”<br>“Watch out! You're going to fall.”</td></tr>\n<tr><td><b>Present Continuous</b> (be + verbo-ing)</td><td>Planes confirmados y organizados, con día u hora (una cita, una reserva, algo en el calendario)</td><td>“We're leaving at 7 tomorrow.”</td></tr></table>\n<p><b>Truco:</b> preguntate si la decisión ya estaba tomada antes de hablar. Si no, es <i>will</i>. Si sí, es <i>going to</i>, y si además está confirmada con fecha u hora, es <i>Present Continuous</i>.</p>",
+    "inst": "Choose the correct future form. Pay attention to the context (spontaneous decisions, intentions, predictions, or fixed arrangements).",
+    "theory": "<p><b>A. Expressing the Future (Will vs. Going to vs. Present Continuous)</b></p>\n<p>In English, we don't have just one future tense. We choose the structure based on the context and our intentions.</p>\n<ul>\n  <li><b>WILL + Infinitive:</b> Used for spontaneous decisions made at the moment of speaking (e.g., \"The phone is ringing, I will answer it!\"), promises, and predictions based on personal opinions/beliefs (e.g., \"I think people will live on Mars\").</li>\n  <li><b>BE GOING TO + Infinitive:</b> Used for intentions and plans already made before speaking (e.g., \"I am going to study architecture next year\"), and predictions based on present evidence (e.g., \"Look at those black clouds! It is going to rain\").</li>\n  <li><b>PRESENT CONTINUOUS (am/is/are + -ing):</b> Used for fixed arrangements. This means a plan that is 100% confirmed, usually with a specific time, place, or other people involved. (e.g., \"I am meeting the doctor tomorrow at 5 PM\").</li>\n</ul>",
     "items": [
       {
         "id": "e1q1",
@@ -124,8 +124,8 @@
     "title": "Exercise 2: Conditionals",
     "tag": "B1 - Grammar",
     "block": "Class 4 · Homework",
-    "inst": "Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals. Si hay más de un espacio, escribí las respuestas en orden, separadas por coma (por ejemplo: go, would see).",
-    "theory": "<p><b>First y Second Conditional</b></p>\n<table><tr><th></th><th>Estructura</th><th>Se usa para</th><th>Ejemplo</th></tr>\n<tr><td><b>First</b></td><td>If + <b>present simple</b>, <b>will</b> + verbo</td><td>Situaciones reales o posibles en el futuro</td><td>If it snows, we'll build a snowman.</td></tr>\n<tr><td><b>Second</b></td><td>If + <b>past simple</b>, <b>would</b> + verbo</td><td>Situaciones imaginarias o poco probables</td><td>If I won the lottery, I would buy a house.</td></tr></table>\n<p><b>Negativas:</b> If he <i>doesn't hurry</i>, he <i>won't catch</i> the bus. · If I <i>didn't work</i>, I <i>wouldn't have</i> money.</p>\n<p><b>Preguntas:</b> What <i>would</i> you do if you <i>found</i> a wallet?</p>\n<p><b>Ojo:</b> con el verbo <i>be</i> en Second Conditional se usa <i>were</i> para todas las personas: If I <i>were</i> you…</p>\n<p>En estas estructuras, no pongas <i>will</i> ni <i>would</i> justo después de <i>if</i>.</p>",
+    "inst": "Complete the sentences with the correct form of the verbs in brackets to form First or Second Conditionals. If there is more than one gap, write the answers in order, separated by a comma (e.g., go, would see).",
+    "theory": "<p><b>B. Conditionals (First vs. Second)</b></p>\n<p>Conditionals are \"If\" sentences. They describe the result of a certain condition.</p>\n<ul>\n  <li><b>First Conditional (Real/Possible):</b> Used to talk about real and highly possible situations in the future.<br>\n  <b>Structure:</b> If + Present Simple, ... Will + Infinitive<br>\n  <b>Example:</b> \"If we recycle more plastic, we will help the environment.\" (This is a real possibility).</li>\n  <li><b>Second Conditional (Unreal/Hypothetical):</b> Used to talk about imaginary, impossible, or highly unlikely situations in the present or future. It is also used to give advice (\"If I were you...\").<br>\n  <b>Structure:</b> If + Past Simple, ... Would + Infinitive<br>\n  <b>Example:</b> \"If I had a million dollars, I would buy an electric car.\" (I don't have the money, it's imaginary).<br>\n  <b>Example:</b> \"If I were you, I would talk to the manager.\"</li>\n</ul>",
     "items": [
       {
         "id": "e2q1",
@@ -182,8 +182,8 @@
     "title": "Exercise 3: Spot the B1 Mistakes",
     "tag": "B1 - Writing",
     "block": "Class 4 · Homework",
-    "inst": "Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!",
-    "theory": "<p><b>Errores clásicos de B1 para buscar</b></p>\n<table><tr><th>Error común</th><th>Cómo se corrige</th></tr>\n<tr><td><i>If</i> + <i>will</i> ✗<br>“If it will be cold, I'll wear a coat.”</td><td>Después de <i>if</i> va present simple:<br>“If it <b>is</b> cold, I'll wear a coat.”</td></tr>\n<tr><td>Mezclar tiempos ✗<br>“If I see a ghost, I would scream.”</td><td>Hipotético: if + past simple, would + verbo.<br>Real: if + present simple, will + verbo.</td></tr>\n<tr><td>Second Conditional con present simple ✗<br>“What would you do if you find a wallet?”</td><td>If + past simple:<br>“…if you <b>found</b> a wallet?”</td></tr>\n<tr><td>Promesas con <i>going to</i> ✗<br>“I promise I'm going to call you.”</td><td>Para promesas y ofrecimientos se usa <i>will</i>:<br>“I promise I'll call you.”</td></tr></table>\n<p><b>Pasos:</b> 1) fijate si la oración es real o imaginaria; 2) revisá el tiempo que va después de <i>if</i>; 3) revisá el verbo de la otra parte; 4) escribí la oración completa corregida.</p>",
+    "inst": "Find the grammatical mistake in each sentence and write the correct version. Look for classic conditional and future mistakes!",
+    "theory": "<p><b>Classic B1 Mistakes to Watch Out For</b></p>\n<table>\n  <tr><th style=\"text-align: left;\">Common Mistake</th><th style=\"text-align: left;\">How to Fix It</th></tr>\n  <tr><td><i>If</i> + <i>will</i> ✗<br>\"If it will be cold, I'll wear a coat.\"</td><td>Use Present Simple after <i>if</i>:<br>\"If it <b>is</b> cold, I'll wear a coat.\"</td></tr>\n  <tr><td>Mixing tenses ✗<br>\"If I see a ghost, I would scream.\"</td><td>Hypothetical: if + past simple, would + verb.<br>Real: if + present simple, will + verb.</td></tr>\n  <tr><td>Second Conditional with present simple ✗<br>\"What would you do if you find a wallet?\"</td><td>If + past simple:<br>\"...if you <b>found</b> a wallet?\"</td></tr>\n  <tr><td>Promises with <i>going to</i> ✗<br>\"I promise I'm going to call you.\"</td><td>Use <i>will</i> for promises and offers:<br>\"I promise I'll call you.\"</td></tr>\n</table>",
     "items": [
       {
         "id": "e3q1",
@@ -222,8 +222,8 @@
     "title": "Exercise 4: Key Word Transformations",
     "tag": "B1 - Writing",
     "block": "Class 4 · Homework",
-    "inst": "Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis.",
-    "theory": "<p><b>Key Word Transformations</b></p>\n<p>Reescribí la oración con el mismo significado usando la palabra dada <b>sin cambiarla</b>.</p>\n<table><tr><th>Palabra</th><th>Uso</th><th>Ejemplo</th></tr>\n<tr><td><b>should / ought to</b> + verbo</td><td>Consejos (<i>ought</i> siempre lleva <i>to</i>)</td><td>You should see a doctor.<br>You ought to see a doctor.</td></tr>\n<tr><td><b>don't have to</b> + verbo</td><td>No es necesario (no hay obligación)</td><td>You don't have to come.</td></tr>\n<tr><td><b>mustn't</b> + verbo</td><td>Está prohibido</td><td>You mustn't smoke here.</td></tr>\n<tr><td><b>be going to</b> + verbo</td><td>Planes e intenciones</td><td>I'm going to learn to cook.</td></tr>\n<tr><td><b>who</b></td><td>Cláusula relativa para personas</td><td>The woman who lives next door is a nurse.</td></tr></table>\n<p><b>Ojo:</b> <i>don't have to</i> (no es necesario) y <i>mustn't</i> (prohibido) no significan lo mismo.</p>",
+    "inst": "Rewrite the sentences keeping the exact same meaning, using the word in brackets.",
+    "theory": "<p><b>Key Word Transformations</b></p>\n<p>Rewrite the sentence with the same meaning using the given word <b>without changing it</b>.</p>\n<table>\n  <tr><th style=\"text-align: left;\">Word</th><th style=\"text-align: left;\">Usage</th><th style=\"text-align: left;\">Example</th></tr>\n  <tr><td><b>should / ought to</b> + verb</td><td>Advice (<i>ought</i> always takes <i>to</i>)</td><td>You should see a doctor.<br>You ought to see a doctor.</td></tr>\n  <tr><td><b>don't have to</b> + verb</td><td>Not necessary (no obligation)</td><td>You don't have to come.</td></tr>\n  <tr><td><b>mustn't</b> + verb</td><td>Prohibited</td><td>You mustn't smoke here.</td></tr>\n  <tr><td><b>be going to</b> + verb</td><td>Plans and intentions</td><td>I'm going to learn to cook.</td></tr>\n  <tr><td><b>who</b></td><td>Relative clause for people</td><td>The woman who lives next door is a nurse.</td></tr>\n</table>\n<p><b>Watch out:</b> <i>don't have to</i> (not necessary) and <i>mustn't</i> (prohibited) do not mean the same thing.</p>",
     "items": [
       {
         "id": "e4q1",
@@ -260,49 +260,6 @@
         "t": "open",
         "q": "6. It is strictly prohibited to throw batteries in the normal bin. (MUSTN'T) -> You ____________________ batteries in the normal bin.",
         "why": "Usa mustn't para prohibiciones."
-      }
-    ]
-  },
-  {
-    "id": "hw-class-4-ex5",
-    "title": "Exercise 5: Tech & Environment Predictions",
-    "tag": "B1 - Vocabulary & Grammar",
-    "block": "Class 4 · Extra Practice",
-    "inst": "Elige la opción correcta para completar estas predicciones y situaciones sobre tecnología y medio ambiente.",
-    "theory": "<p><b>Review: Future & Conditionals</b></p>\n<p>Recuerda combinar el vocabulario de tecnología y medio ambiente con las reglas de los tiempos futuros (predicciones vs. planes) y el <i>Second Conditional</i> (situaciones hipotéticas).</p>",
-    "items": [
-      {
-        "id": "e5q1",
-        "t": "mc",
-        "q": "1. I am sure that smart devices ___ our lives completely in the next ten years.",
-        "o": [
-          "will change",
-          "are changing"
-        ],
-        "a": "will change",
-        "why": "Es una predicción u opinión general sobre el futuro (will)."
-      },
-      {
-        "id": "e5q2",
-        "t": "mc",
-        "q": "2. If we didn't have smartphones, how ___ we communicate?",
-        "o": [
-          "will",
-          "would"
-        ],
-        "a": "would",
-        "why": "Es una situación imaginaria (Second Conditional), por lo tanto usamos would."
-      },
-      {
-        "id": "e5q3",
-        "t": "mc",
-        "q": "3. Look at all that traffic! We ___ late for the tech conference.",
-        "o": [
-          "will be",
-          "are going to be"
-        ],
-        "a": "are going to be",
-        "why": "Es una predicción basada en una evidencia actual (el tráfico visible)."
       }
     ]
   }
