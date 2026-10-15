@@ -77,32 +77,7 @@ input[type=file]{font:inherit;max-width:100%}input[type=file]::file-selector-but
 <body><header class="top" id="top"></header><main id="app"></main><footer class="ft">English Corner · Practice between classes</footer>
 <script>
 // Add activities here: {id,title,tag,theory,items:[...]}
-const ACTS = [
-  {
-    id: 'hw-class-4',
-    title: 'Future Tenses Contrast',
-    tag: 'B1 - Future Tenses & Conditionals',
-    theory: 'Elige la forma de futuro correcta para completar las oraciones. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).',
-    items: [
-      {
-        id: 'ex1-q1', 
-        t: 'mc', 
-        q: "I've bought the tickets! We ___ to Tokyo next month to see the new smart city.", 
-        o: ['fly', 'are flying'], 
-        a: 'are flying', 
-        why: 'Planes confirmados o arreglos fijos requieren Present Continuous.'
-      },
-      {
-        id: 'ex1-q2', 
-        t: 'mc', 
-        q: 'Look at those dark clouds! It ___ heavily.', 
-        o: ['is going to rain', 'will rain'], 
-        a: 'is going to rain', 
-        why: 'Predicción basada en evidencia visible requiere going to.'
-      }
-    ]
-  }
-];
+const ACTS = [];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -237,6 +212,17 @@ function refresh(){const el=document.activeElement;if(S.tab==='teach'&&el&&/INPU
  if(S.open&&el&&/INPUT|TEXTAREA/.test(el.tagName))return;render()}
 
 (async()=>{
+ // --- NUEVO: Leer el archivo activities.json ---
+ try {
+  const res = await fetch('./activities.json?t=' + new Date().getTime());
+  if (!res.ok) throw new Error('No se encontró el archivo');
+  const data = await res.json();
+  ACTS.push(...data);
+ } catch(e) {
+  console.error("No se pudo cargar activities.json.", e);
+ }
+ // ----------------------------------------------
+
  ACTS.forEach(a=>{const s=lsGet('ec-sub-'+a.id);if(s){S.subs[a.id]=s;S.ans[a.id]=s.answers;S.checked[a.id]=true}});
  render();
  try{
