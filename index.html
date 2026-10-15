@@ -77,7 +77,32 @@ input[type=file]{font:inherit;max-width:100%}input[type=file]::file-selector-but
 <body><header class="top" id="top"></header><main id="app"></main><footer class="ft">English Corner · Practice between classes</footer>
 <script>
 // Add activities here: {id,title,tag,theory,items:[...]}
-const ACTS=[];
+const ACTS = [
+  {
+    id: 'hw-class-4',
+    title: 'Future Tenses Contrast',
+    tag: 'B1 - Future Tenses & Conditionals',
+    theory: 'Elige la forma de futuro correcta para completar las oraciones. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).',
+    items: [
+      {
+        id: 'ex1-q1', 
+        t: 'mc', 
+        q: "I've bought the tickets! We ___ to Tokyo next month to see the new smart city.", 
+        o: ['fly', 'are flying'], 
+        a: 'are flying', 
+        why: 'Planes confirmados o arreglos fijos requieren Present Continuous.'
+      },
+      {
+        id: 'ex1-q2', 
+        t: 'mc', 
+        q: 'Look at those dark clouds! It ___ heavily.', 
+        o: ['is going to rain', 'will rain'], 
+        a: 'is going to rain', 
+        why: 'Predicción basada en evidencia visible requiere going to.'
+      }
+    ]
+  }
+];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
