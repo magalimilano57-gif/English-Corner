@@ -1,42 +1,266 @@
 [
   {
-    "id": "hw-class-4-unified",
-    "title": "Homework Class 4: Future Tenses & Conditionals",
-    "tag": "B1 - Intensive Practice",
-    "theory": "<p><b>1. Future Tenses:</b></p><ul><li><b>Present Continuous:</b> Confirmed plans and arrangements (e.g., booked tickets, appointments).</li><li><b>Going to:</b> Intentions or predictions with visible evidence in the present (e.g., dark clouds).</li><li><b>Will:</b> Spontaneous decisions, promises, or general beliefs about the future.</li></ul><p><b>2. Conditionals:</b></p><ul><li><b>First Conditional (Real):</b> If + Present Simple, ... will + infinitive (e.g., If it rains, I will stay home).</li><li><b>Second Conditional (Hypothetical):</b> If + Past Simple, ... would + infinitive (e.g., If I had money, I would travel).</li></ul><p><b>3. Modals:</b></p><ul><li><b>Should / Ought to:</b> Advice.</li><li><b>Don't have to:</b> Lack of obligation (It's not necessary).</li><li><b>Mustn't:</b> Prohibition.</li></ul>",
+    "id": "hw-class-4-ex1",
+    "title": "Exercise 1: Future Tenses Contrast",
+    "tag": "B1 - Grammar",
+    "block": "Class 4 · Homework",
+    "inst": "Elige la forma de futuro correcta. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).",
+    "theory": "<p><b>Futuro: will, be going to y Present Continuous</b></p>\n<table><tr><th>Forma</th><th>Cuándo se usa</th><th>Ejemplo</th></tr>\n<tr><td><b>will</b> + verbo</td><td>Decisiones espontáneas (las tomás en el momento), predicciones u opiniones (<i>I think…, probably…</i>) y promesas</td><td>“It's hot. I'll open the window.”<br>“I think she will win.”</td></tr>\n<tr><td><b>be going to</b> + verbo</td><td>Planes o intenciones que ya estaban decididos antes de hablar; predicciones basadas en algo que ves ahora</td><td>“I'm going to study tonight.”<br>“Watch out! You're going to fall.”</td></tr>\n<tr><td><b>Present Continuous</b> (be + verbo-ing)</td><td>Planes confirmados y organizados, con día u hora (una cita, una reserva, algo en el calendario)</td><td>“We're leaving at 7 tomorrow.”</td></tr></table>\n<p><b>Truco:</b> preguntate si la decisión ya estaba tomada antes de hablar. Si no, es <i>will</i>. Si sí, es <i>going to</i>, y si además está confirmada con fecha u hora, es <i>Present Continuous</i>.</p>",
     "items": [
-      { "id": "e1q1", "t": "mc", "q": "PART 1: FUTURE TENSES | 1. I've bought the tickets! We ___ to Tokyo next month to see the new smart city.", "o": ["fly", "are flying"], "a": "are flying", "why": "Planes confirmados (Present Continuous)." },
-      { "id": "e1q2", "t": "mc", "q": "2. Look at those dark clouds! It ___ heavily.", "o": ["is going to rain", "will rain"], "a": "is going to rain", "why": "Predicción con evidencia visual (Going to)." },
-      { "id": "e1q3", "t": "mc", "q": "3. A: 'I don't know how to use this new app.' B: 'Don't worry, I ___ you.'", "o": ["will show", "am showing"], "a": "will show", "why": "Decisión espontánea en el momento (Will)." },
-      { "id": "e1q4", "t": "mc", "q": "4. Next year, the government ___ a new renewable energy plant. The plans are already approved.", "o": ["is going to build", "building"], "a": "is going to build", "why": "Intención o plan con evidencia/aprobación (Going to)." },
-      { "id": "e1q5", "t": "mc", "q": "5. I think people ___ flying cars in 2050, but I'm not sure.", "o": ["will drive", "are driving"], "a": "will drive", "why": "Predicción general u opinión (Will)." },
-      { "id": "e1q6", "t": "mc", "q": "6. We ___ the environmental committee at 10 AM tomorrow. It's in my calendar.", "o": ["are meeting", "will meet"], "a": "are meeting", "why": "Acuerdo fijo en calendario (Present Continuous)." },
-      { "id": "e1q7", "t": "mc", "q": "7. A: 'We have no milk.' B: 'Really? I ___ to the supermarket now to buy some.'", "o": ["will go", "am going to go"], "a": "will go", "why": "Decisión espontánea al enterarse (Will)." },
-      { "id": "e1q8", "t": "mc", "q": "8. A: 'Why are you taking your laptop?' B: 'Because I ___ on the train.'", "o": ["am going to work", "will work"], "a": "am going to work", "why": "Intención ya pensada de antemano (Going to)." },
-      { "id": "e1q9", "t": "mc", "q": "9. The new smartphones ___ a lot of money next year.", "o": ["will probably cost", "are probably costing"], "a": "will probably cost", "why": "Predicción con 'probably' (Will)." },
-      { "id": "e1q10", "t": "mc", "q": "10. I ___ lunch with my boss on Friday to discuss the new project.", "o": ["am having", "will have"], "a": "am having", "why": "Acuerdo fijo o cita (Present Continuous)." },
-
-      { "id": "e2q1", "t": "open", "q": "PART 2: CONDITIONALS | 1. If we ___ (use) more renewable energy, climate change ___ (slow) down. (First Conditional)", "why": "Revisa la estructura del First Conditional." },
-      { "id": "e2q2", "t": "open", "q": "2. If I ___ (be) the president, I ___ (ban) all plastic bags. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
-      { "id": "e2q3", "t": "open", "q": "3. What ___ you ___ (do) if you ___ (lose) your smartphone? (Second Conditional)", "why": "Revisa la estructura de pregunta del Second Conditional." },
-      { "id": "e2q4", "t": "open", "q": "4. If she ___ (not/study) hard, she ___ (not/pass) the university exam tomorrow. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional." },
-      { "id": "e2q5", "t": "open", "q": "5. We ___ (save) a lot of water if everyone ___ (take) shorter showers. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
-      { "id": "e2q6", "t": "open", "q": "6. If the new app ___ (be) successful, the company ___ (make) millions. (First Conditional)", "why": "Revisa la estructura del First Conditional." },
-      { "id": "e2q7", "t": "open", "q": "7. I ___ (buy) an electric car if I ___ (have) enough money, but they are too expensive. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
-      { "id": "e2q8", "t": "open", "q": "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional." },
-
-      { "id": "e3q1", "t": "open", "q": "PART 3: SPOT THE MISTAKES | 1. If it will rain tomorrow, we will stay at home.", "why": "Recuerda las reglas de los condicionales." },
-      { "id": "e3q2", "t": "open", "q": "2. I promise I am going to help you with your homework tonight.", "why": "Revisa los tiempos futuros para promesas." },
-      { "id": "e3q3", "t": "open", "q": "3. If I have a million dollars, I would travel around the world.", "why": "Revisa la mezcla incorrecta de condicionales." },
-      { "id": "e3q4", "t": "open", "q": "4. What would you do if you win the lottery?", "why": "Revisa el Second Conditional." },
-      { "id": "e3q5", "t": "open", "q": "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule.", "why": "Revisa el uso de present continuous para planes fijos." },
-
-      { "id": "e4q1", "t": "open", "q": "PART 4: TRANSFORMATIONS | 1. It is a good idea to install this new security app. (SHOULD) -> You ____________________ this new security app.", "why": "Usa should para dar consejos." },
-      { "id": "e4q2", "t": "open", "q": "2. It is not necessary for us to print these documents. (HAVE) -> We ____________________ print these documents.", "why": "Usa don't have to para falta de obligación." },
-      { "id": "e4q3", "t": "open", "q": "3. I am planning to buy a new smart TV next week. (GOING) -> I ____________________ a new smart TV next week.", "why": "Usa going to para planes." },
-      { "id": "e4q4", "t": "open", "q": "4. I advise you to recycle plastic. (OUGHT) -> You ____________________ plastic.", "why": "Usa ought to para consejos." },
-      { "id": "e4q5", "t": "open", "q": "5. The man is a scientist. He invented the new battery. (WHO) -> The man ____________________ is a scientist.", "why": "Usa una relative clause." },
-      { "id": "e4q6", "t": "open", "q": "6. It is strictly prohibited to throw batteries in the normal bin. (MUSTN'T) -> You ____________________ batteries in the normal bin.", "why": "Usa mustn't para prohibiciones." }
+      {
+        "id": "e1q1",
+        "t": "mc",
+        "q": "1. I've bought the tickets! We ___ to Tokyo next month to see the new smart city.",
+        "o": [
+          "fly",
+          "are flying"
+        ],
+        "a": "are flying",
+        "why": "Planes confirmados (Present Continuous)."
+      },
+      {
+        "id": "e1q2",
+        "t": "mc",
+        "q": "2. Look at those dark clouds! It ___ heavily.",
+        "o": [
+          "is going to rain",
+          "will rain"
+        ],
+        "a": "is going to rain",
+        "why": "Predicción con evidencia visual (Going to)."
+      },
+      {
+        "id": "e1q3",
+        "t": "mc",
+        "q": "3. A: 'I don't know how to use this new app.' B: 'Don't worry, I ___ you.'",
+        "o": [
+          "will show",
+          "am showing"
+        ],
+        "a": "will show",
+        "why": "Decisión espontánea en el momento (Will)."
+      },
+      {
+        "id": "e1q4",
+        "t": "mc",
+        "q": "4. Next year, the government ___ a new renewable energy plant. The plans are already approved.",
+        "o": [
+          "is going to build",
+          "building"
+        ],
+        "a": "is going to build",
+        "why": "Intención o plan con evidencia/aprobación (Going to)."
+      },
+      {
+        "id": "e1q5",
+        "t": "mc",
+        "q": "5. I think people ___ flying cars in 2050, but I'm not sure.",
+        "o": [
+          "will drive",
+          "are driving"
+        ],
+        "a": "will drive",
+        "why": "Predicción general u opinión (Will)."
+      },
+      {
+        "id": "e1q6",
+        "t": "mc",
+        "q": "6. We ___ the environmental committee at 10 AM tomorrow. It's in my calendar.",
+        "o": [
+          "are meeting",
+          "will meet"
+        ],
+        "a": "are meeting",
+        "why": "Acuerdo fijo en calendario (Present Continuous)."
+      },
+      {
+        "id": "e1q7",
+        "t": "mc",
+        "q": "7. A: 'We have no milk.' B: 'Really? I ___ to the supermarket now to buy some.'",
+        "o": [
+          "will go",
+          "am going to go"
+        ],
+        "a": "will go",
+        "why": "Decisión espontánea al enterarse (Will)."
+      },
+      {
+        "id": "e1q8",
+        "t": "mc",
+        "q": "8. A: 'Why are you taking your laptop?' B: 'Because I ___ on the train.'",
+        "o": [
+          "am going to work",
+          "will work"
+        ],
+        "a": "am going to work",
+        "why": "Intención ya pensada de antemano (Going to)."
+      },
+      {
+        "id": "e1q9",
+        "t": "mc",
+        "q": "9. The new smartphones ___ a lot of money next year.",
+        "o": [
+          "will probably cost",
+          "are probably costing"
+        ],
+        "a": "will probably cost",
+        "why": "Predicción con 'probably' (Will)."
+      },
+      {
+        "id": "e1q10",
+        "t": "mc",
+        "q": "10. I ___ lunch with my boss on Friday to discuss the new project.",
+        "o": [
+          "am having",
+          "will have"
+        ],
+        "a": "am having",
+        "why": "Acuerdo fijo o cita (Present Continuous)."
+      }
+    ]
+  },
+  {
+    "id": "hw-class-4-ex2",
+    "title": "Exercise 2: Conditionals",
+    "tag": "B1 - Grammar",
+    "block": "Class 4 · Homework",
+    "inst": "Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals. Si hay más de un espacio, escribí las respuestas en orden, separadas por coma (por ejemplo: go, would see).",
+    "theory": "<p><b>First y Second Conditional</b></p>\n<table><tr><th></th><th>Estructura</th><th>Se usa para</th><th>Ejemplo</th></tr>\n<tr><td><b>First</b></td><td>If + <b>present simple</b>, <b>will</b> + verbo</td><td>Situaciones reales o posibles en el futuro</td><td>If it snows, we'll build a snowman.</td></tr>\n<tr><td><b>Second</b></td><td>If + <b>past simple</b>, <b>would</b> + verbo</td><td>Situaciones imaginarias o poco probables</td><td>If I won the lottery, I would buy a house.</td></tr></table>\n<p><b>Negativas:</b> If he <i>doesn't hurry</i>, he <i>won't catch</i> the bus. · If I <i>didn't work</i>, I <i>wouldn't have</i> money.</p>\n<p><b>Preguntas:</b> What <i>would</i> you do if you <i>found</i> a wallet?</p>\n<p><b>Ojo:</b> con el verbo <i>be</i> en Second Conditional se usa <i>were</i> para todas las personas: If I <i>were</i> you…</p>\n<p>En estas estructuras, no pongas <i>will</i> ni <i>would</i> justo después de <i>if</i>.</p>",
+    "items": [
+      {
+        "id": "e2q1",
+        "t": "open",
+        "q": "1. If we ___ (use) more renewable energy, climate change ___ (slow) down. (First Conditional)",
+        "why": "Revisa la estructura del First Conditional."
+      },
+      {
+        "id": "e2q2",
+        "t": "open",
+        "q": "2. If I ___ (be) the president, I ___ (ban) all plastic bags. (Second Conditional)",
+        "why": "Revisa la estructura del Second Conditional."
+      },
+      {
+        "id": "e2q3",
+        "t": "open",
+        "q": "3. What ___ you ___ (do) if you ___ (lose) your smartphone? (Second Conditional)",
+        "why": "Revisa la estructura de pregunta del Second Conditional."
+      },
+      {
+        "id": "e2q4",
+        "t": "open",
+        "q": "4. If she ___ (not/study) hard, she ___ (not/pass) the university exam tomorrow. (First Conditional)",
+        "why": "Revisa la estructura negativa del First Conditional."
+      },
+      {
+        "id": "e2q5",
+        "t": "open",
+        "q": "5. We ___ (save) a lot of water if everyone ___ (take) shorter showers. (Second Conditional)",
+        "why": "Revisa la estructura del Second Conditional."
+      },
+      {
+        "id": "e2q6",
+        "t": "open",
+        "q": "6. If the new app ___ (be) successful, the company ___ (make) millions. (First Conditional)",
+        "why": "Revisa la estructura del First Conditional."
+      },
+      {
+        "id": "e2q7",
+        "t": "open",
+        "q": "7. I ___ (buy) an electric car if I ___ (have) enough money, but they are too expensive. (Second Conditional)",
+        "why": "Revisa la estructura del Second Conditional."
+      },
+      {
+        "id": "e2q8",
+        "t": "open",
+        "q": "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)",
+        "why": "Revisa la estructura negativa del First Conditional."
+      }
+    ]
+  },
+  {
+    "id": "hw-class-4-ex3",
+    "title": "Exercise 3: Spot the B1 Mistakes",
+    "tag": "B1 - Writing",
+    "block": "Class 4 · Homework",
+    "inst": "Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!",
+    "theory": "<p><b>Errores clásicos de B1 para buscar</b></p>\n<table><tr><th>Error común</th><th>Cómo se corrige</th></tr>\n<tr><td><i>If</i> + <i>will</i> ✗<br>“If it will be cold, I'll wear a coat.”</td><td>Después de <i>if</i> va present simple:<br>“If it <b>is</b> cold, I'll wear a coat.”</td></tr>\n<tr><td>Mezclar tiempos ✗<br>“If I see a ghost, I would scream.”</td><td>Hipotético: if + past simple, would + verbo.<br>Real: if + present simple, will + verbo.</td></tr>\n<tr><td>Second Conditional con present simple ✗<br>“What would you do if you find a wallet?”</td><td>If + past simple:<br>“…if you <b>found</b> a wallet?”</td></tr>\n<tr><td>Promesas con <i>going to</i> ✗<br>“I promise I'm going to call you.”</td><td>Para promesas y ofrecimientos se usa <i>will</i>:<br>“I promise I'll call you.”</td></tr></table>\n<p><b>Pasos:</b> 1) fijate si la oración es real o imaginaria; 2) revisá el tiempo que va después de <i>if</i>; 3) revisá el verbo de la otra parte; 4) escribí la oración completa corregida.</p>",
+    "items": [
+      {
+        "id": "e3q1",
+        "t": "open",
+        "q": "1. If it will rain tomorrow, we will stay at home.",
+        "why": "Recuerda las reglas de los condicionales."
+      },
+      {
+        "id": "e3q2",
+        "t": "open",
+        "q": "2. I promise I am going to help you with your homework tonight.",
+        "why": "Revisa los tiempos futuros para promesas."
+      },
+      {
+        "id": "e3q3",
+        "t": "open",
+        "q": "3. If I have a million dollars, I would travel around the world.",
+        "why": "Revisa la mezcla incorrecta de condicionales."
+      },
+      {
+        "id": "e3q4",
+        "t": "open",
+        "q": "4. What would you do if you win the lottery?",
+        "why": "Revisa el Second Conditional."
+      },
+      {
+        "id": "e3q5",
+        "t": "open",
+        "q": "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule.",
+        "why": "Revisa el uso de present continuous para planes fijos."
+      }
+    ]
+  },
+  {
+    "id": "hw-class-4-ex4",
+    "title": "Exercise 4: Key Word Transformations",
+    "tag": "B1 - Writing",
+    "block": "Class 4 · Homework",
+    "inst": "Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis.",
+    "theory": "<p><b>Key Word Transformations</b></p>\n<p>Reescribí la oración con el mismo significado usando la palabra dada <b>sin cambiarla</b>.</p>\n<table><tr><th>Palabra</th><th>Uso</th><th>Ejemplo</th></tr>\n<tr><td><b>should / ought to</b> + verbo</td><td>Consejos (<i>ought</i> siempre lleva <i>to</i>)</td><td>You should see a doctor.<br>You ought to see a doctor.</td></tr>\n<tr><td><b>don't have to</b> + verbo</td><td>No es necesario (no hay obligación)</td><td>You don't have to come.</td></tr>\n<tr><td><b>mustn't</b> + verbo</td><td>Está prohibido</td><td>You mustn't smoke here.</td></tr>\n<tr><td><b>be going to</b> + verbo</td><td>Planes e intenciones</td><td>I'm going to learn to cook.</td></tr>\n<tr><td><b>who</b></td><td>Cláusula relativa para personas</td><td>The woman who lives next door is a nurse.</td></tr></table>\n<p><b>Ojo:</b> <i>don't have to</i> (no es necesario) y <i>mustn't</i> (prohibido) no significan lo mismo.</p>",
+    "items": [
+      {
+        "id": "e4q1",
+        "t": "open",
+        "q": "1. It is a good idea to install this new security app. (SHOULD) -> You ____________________ this new security app.",
+        "why": "Usa should para dar consejos."
+      },
+      {
+        "id": "e4q2",
+        "t": "open",
+        "q": "2. It is not necessary for us to print these documents. (HAVE) -> We ____________________ print these documents.",
+        "why": "Usa don't have to para falta de obligación."
+      },
+      {
+        "id": "e4q3",
+        "t": "open",
+        "q": "3. I am planning to buy a new smart TV next week. (GOING) -> I ____________________ a new smart TV next week.",
+        "why": "Usa going to para planes."
+      },
+      {
+        "id": "e4q4",
+        "t": "open",
+        "q": "4. I advise you to recycle plastic. (OUGHT) -> You ____________________ plastic.",
+        "why": "Usa ought to para consejos."
+      },
+      {
+        "id": "e4q5",
+        "t": "open",
+        "q": "5. The man is a scientist. He invented the new battery. (WHO) -> The man ____________________ is a scientist.",
+        "why": "Usa una relative clause."
+      },
+      {
+        "id": "e4q6",
+        "t": "open",
+        "q": "6. It is strictly prohibited to throw batteries in the normal bin. (MUSTN'T) -> You ____________________ batteries in the normal bin.",
+        "why": "Usa mustn't para prohibiciones."
+      }
     ]
   }
 ]
