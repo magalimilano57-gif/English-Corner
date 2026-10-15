@@ -1,0 +1,64 @@
+{
+    "worksheet_title": "Homework Class 4: Future Tenses & Conditionals",
+    "level": "B1",
+    "description": "Práctica intensiva para consolidar tiempos de futuro, condicionales 1 y 2, y reciclar modales y cláusulas relativas.",
+    "exercises": [
+        {
+            "exercise_number": 1,
+            "title": "Future Tenses Contrast (Will, Going to, Present Continuous)",
+            "instruction": "Elige la forma de futuro correcta para completar las oraciones. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).",
+            "items": [
+                "1. I've bought the tickets! We ___ (fly / are flying) to Tokyo next month to see the new smart city.",
+                "2. Look at those dark clouds! It ___ (is going to rain / will rain) heavily.",
+                "3. A: 'I don't know how to use this new app.' B: 'Don't worry, I ___ (will show / am showing) you.'",
+                "4. Next year, the government ___ (is going to build / building) a new renewable energy plant. The plans are already approved.",
+                "5. I think people ___ (will drive / are driving) flying cars in 2050, but I'm not sure.",
+                "6. We ___ (are meeting / will meet) the environmental committee at 10 AM tomorrow. It's in my calendar.",
+                "7. A: 'We have no milk.' B: 'Really? I ___ (will go / am going to go) to the supermarket now to buy some.'",
+                "8. A: 'Why are you taking your laptop?' B: 'Because I ___ (am going to work / will work) on the train.'",
+                "9. The new smartphones ___ (will probably cost / are probably costing) a lot of money next year.",
+                "10. I ___ (am having / will have) lunch with my boss on Friday to discuss the new project."
+            ]
+        },
+        {
+            "exercise_number": 2,
+            "title": "Conditionals: Real or Hypothetical?",
+            "instruction": "Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals.",
+            "items": [
+                "1. If we ___ (use) more renewable energy, climate change ___ (slow) down. (First Conditional - Real possibility)",
+                "2. If I ___ (be) the president, I ___ (ban) all plastic bags. (Second Conditional - Hypothetical)",
+                "3. What ___ you ___ (do) if you ___ (lose) your smartphone? (Second Conditional)",
+                "4. If she ___ (not/study) hard, she ___ (not/pass) the university exam tomorrow. (First Conditional)",
+                "5. We ___ (save) a lot of water if everyone ___ (take) shorter showers. (Second Conditional)",
+                "6. If the new app ___ (be) successful, the company ___ (make) millions. (First Conditional)",
+                "7. I ___ (buy) an electric car if I ___ (have) enough money, but they are too expensive. (Second Conditional)",
+                "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)"
+            ]
+        },
+        {
+            "exercise_number": 3,
+            "title": "Spot the B1 Mistakes",
+            "instruction": "Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!",
+            "items": [
+                "1. If it will rain tomorrow, we will stay at home.",
+                "2. I promise I am going to help you with your homework tonight.",
+                "3. If I have a million dollars, I would travel around the world.",
+                "4. What would you do if you win the lottery?",
+                "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule."
+            ]
+        },
+        {
+            "exercise_number": 4,
+            "title": "Key Word Transformations (Integrated Review)",
+            "instruction": "Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis. ¡Este ejercicio incluye Modales y Relative Clauses de las clases 2 y 3!",
+            "items": [
+                "1. It is a good idea to install this new security app. (SHOULD) -> You ____________________ this new security app.",
+                "2. It is not necessary for us to print these documents. (HAVE) -> We ____________________ print these documents.",
+                "3. I am planning to buy a new smart TV next week. (GOING) -> I ____________________ a new smart TV next week.",
+                "4. I advise you to recycle plastic. (OUGHT) -> You ____________________ plastic.",
+                "5. The man is a scientist. He invented the new battery. (WHO) -> The man ____________________ is a scientist.",
+                "6. It is strictly prohibited to throw batteries in the normal bin. (MUSTN'T) -> You ____________________ batteries in the normal bin."
+            ]
+        }
+    ]
+}
