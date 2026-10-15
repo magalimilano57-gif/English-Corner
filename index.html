@@ -246,10 +246,13 @@ function refresh(){const el=document.activeElement;if(S.tab==='teach'&&el&&/INPU
   S.local = true;
   render();
 
- } catch(e) {
+
+} catch(e) {
   console.error('Error al cargar las actividades:', e);
-  S.local = true;
-  render();
- }
+  document.querySelector('#app').innerHTML =
+    '<div class="card"><h2>Error al cargar las actividades</h2><p>' +
+    String(e.message || e) +
+    '</p><p>Revisá la consola del navegador para más detalles.</p></div>';
+}
 })();
 
