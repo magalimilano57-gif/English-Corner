@@ -1,10 +1,11 @@
 [
   {
-    "id": "hw-class-4-ex1",
-    "title": "Exercise 1: Future Tenses Contrast",
-    "tag": "B1 - Grammar",
-    "theory": "<p><b>Future Tenses (Will, Going to, Present Continuous)</b></p><p>Elige la forma de futuro correcta. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).</p>",
+    "id": "hw-class-4-unified",
+    "title": "Homework Class 4: Future Tenses & Conditionals",
+    "tag": "B1 - Intensive Practice",
+    "theory": "<p><b>Homework Overview:</b> Práctica intensiva para consolidar tiempos de futuro, condicionales 1 y 2, y reciclar modales y cláusulas relativas.</p>",
     "items": [
+      { "id": "s1", "t": "section", "q": "Exercise 1: Future Tenses Contrast", "why": "Elige la forma de futuro correcta para completar las oraciones. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados)." },
       { "id": "e1q1", "t": "mc", "q": "1. I've bought the tickets! We ___ to Tokyo next month to see the new smart city.", "o": ["fly", "are flying"], "a": "are flying", "why": "Planes confirmados (Present Continuous)." },
       { "id": "e1q2", "t": "mc", "q": "2. Look at those dark clouds! It ___ heavily.", "o": ["is going to rain", "will rain"], "a": "is going to rain", "why": "Predicción con evidencia visual (Going to)." },
       { "id": "e1q3", "t": "mc", "q": "3. A: 'I don't know how to use this new app.' B: 'Don't worry, I ___ you.'", "o": ["will show", "am showing"], "a": "will show", "why": "Decisión espontánea en el momento (Will)." },
@@ -14,15 +15,9 @@
       { "id": "e1q7", "t": "mc", "q": "7. A: 'We have no milk.' B: 'Really? I ___ to the supermarket now to buy some.'", "o": ["will go", "am going to go"], "a": "will go", "why": "Decisión espontánea al enterarse (Will)." },
       { "id": "e1q8", "t": "mc", "q": "8. A: 'Why are you taking your laptop?' B: 'Because I ___ on the train.'", "o": ["am going to work", "will work"], "a": "am going to work", "why": "Intención ya pensada de antemano (Going to)." },
       { "id": "e1q9", "t": "mc", "q": "9. The new smartphones ___ a lot of money next year.", "o": ["will probably cost", "are probably costing"], "a": "will probably cost", "why": "Predicción con 'probably' (Will)." },
-      { "id": "e1q10", "t": "mc", "q": "10. I ___ lunch with my boss on Friday to discuss the new project.", "o": ["am having", "will have"], "a": "am having", "why": "Acuerdo fijo o cita (Present Continuous)." }
-    ]
-  },
-  {
-    "id": "hw-class-4-ex2",
-    "title": "Exercise 2: Conditionals",
-    "tag": "B1 - Grammar",
-    "theory": "<p><b>Conditionals: Real or Hypothetical?</b></p><p>Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals.</p>",
-    "items": [
+      { "id": "e1q10", "t": "mc", "q": "10. I ___ lunch with my boss on Friday to discuss the new project.", "o": ["am having", "will have"], "a": "am having", "why": "Acuerdo fijo o cita (Present Continuous)." },
+      
+      { "id": "s2", "t": "section", "q": "Exercise 2: Conditionals: Real or Hypothetical?", "why": "Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals." },
       { "id": "e2q1", "t": "open", "q": "1. If we ___ (use) more renewable energy, climate change ___ (slow) down. (First Conditional)", "why": "Revisa la estructura del First Conditional." },
       { "id": "e2q2", "t": "open", "q": "2. If I ___ (be) the president, I ___ (ban) all plastic bags. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
       { "id": "e2q3", "t": "open", "q": "3. What ___ you ___ (do) if you ___ (lose) your smartphone? (Second Conditional)", "why": "Revisa la estructura de pregunta del Second Conditional." },
@@ -30,28 +25,16 @@
       { "id": "e2q5", "t": "open", "q": "5. We ___ (save) a lot of water if everyone ___ (take) shorter showers. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
       { "id": "e2q6", "t": "open", "q": "6. If the new app ___ (be) successful, the company ___ (make) millions. (First Conditional)", "why": "Revisa la estructura del First Conditional." },
       { "id": "e2q7", "t": "open", "q": "7. I ___ (buy) an electric car if I ___ (have) enough money, but they are too expensive. (Second Conditional)", "why": "Revisa la estructura del Second Conditional." },
-      { "id": "e2q8", "t": "open", "q": "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional." }
-    ]
-  },
-  {
-    "id": "hw-class-4-ex3",
-    "title": "Exercise 3: Spot the B1 Mistakes",
-    "tag": "B1 - Writing",
-    "theory": "<p><b>Spot the B1 Mistakes</b></p><p>Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!</p>",
-    "items": [
+      { "id": "e2q8", "t": "open", "q": "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional." },
+
+      { "id": "s3", "t": "section", "q": "Exercise 3: Spot the B1 Mistakes", "why": "Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!" },
       { "id": "e3q1", "t": "open", "q": "1. If it will rain tomorrow, we will stay at home.", "why": "Recuerda las reglas de los condicionales." },
       { "id": "e3q2", "t": "open", "q": "2. I promise I am going to help you with your homework tonight.", "why": "Revisa los tiempos futuros para promesas." },
       { "id": "e3q3", "t": "open", "q": "3. If I have a million dollars, I would travel around the world.", "why": "Revisa la mezcla incorrecta de condicionales." },
       { "id": "e3q4", "t": "open", "q": "4. What would you do if you win the lottery?", "why": "Revisa el Second Conditional." },
-      { "id": "e3q5", "t": "open", "q": "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule.", "why": "Revisa el uso de present continuous para planes fijos." }
-    ]
-  },
-  {
-    "id": "hw-class-4-ex4",
-    "title": "Exercise 4: Key Word Transformations",
-    "tag": "B1 - Writing",
-    "theory": "<p><b>Key Word Transformations (Integrated Review)</b></p><p>Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis.</p>",
-    "items": [
+      { "id": "e3q5", "t": "open", "q": "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule.", "why": "Revisa el uso de present continuous para planes fijos." },
+
+      { "id": "s4", "t": "section", "q": "Exercise 4: Key Word Transformations", "why": "Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis." },
       { "id": "e4q1", "t": "open", "q": "1. It is a good idea to install this new security app. (SHOULD) -> You ____________________ this new security app.", "why": "Usa should para dar consejos." },
       { "id": "e4q2", "t": "open", "q": "2. It is not necessary for us to print these documents. (HAVE) -> We ____________________ print these documents.", "why": "Usa don't have to para falta de obligación." },
       { "id": "e4q3", "t": "open", "q": "3. I am planning to buy a new smart TV next week. (GOING) -> I ____________________ a new smart TV next week.", "why": "Usa going to para planes." },
