@@ -262,5 +262,48 @@
         "why": "Usa mustn't para prohibiciones."
       }
     ]
+  },
+  {
+    "id": "hw-class-4-ex5",
+    "title": "Exercise 5: Tech & Environment Predictions",
+    "tag": "B1 - Vocabulary & Grammar",
+    "block": "Class 4 · Homework",
+    "inst": "Elige la opción correcta para completar estas predicciones y situaciones sobre tecnología y medio ambiente.",
+    "theory": "<p><b>Review: Future & Conditionals</b></p>\n<p>Recuerda combinar el vocabulario de tecnología y medio ambiente con las reglas de los tiempos futuros (predicciones vs. planes) y el <i>Second Conditional</i> (situaciones hipotéticas).</p>",
+    "items": [
+      {
+        "id": "e5q1",
+        "t": "mc",
+        "q": "1. I am sure that smart devices ___ our lives completely in the next ten years.",
+        "o": [
+          "will change",
+          "are changing"
+        ],
+        "a": "will change",
+        "why": "Es una predicción u opinión general sobre el futuro (will)."
+      },
+      {
+        "id": "e5q2",
+        "t": "mc",
+        "q": "2. If we didn't have smartphones, how ___ we communicate?",
+        "o": [
+          "will",
+          "would"
+        ],
+        "a": "would",
+        "why": "Es una situación imaginaria (Second Conditional), por lo tanto usamos would."
+      },
+      {
+        "id": "e5q3",
+        "t": "mc",
+        "q": "3. Look at all that traffic! We ___ late for the tech conference.",
+        "o": [
+          "will be",
+          "are going to be"
+        ],
+        "a": "are going to be",
+        "why": "Es una predicción basada en una evidencia actual (el tráfico visible)."
+      }
+    ]
   }
 ]
