@@ -109,15 +109,15 @@ function renderItem(a,it,i){
  else if(it.t==='fill')body='';
  else body=`<textarea data-q="${it.id}" aria-label="Your answer">${esc(v)}</textarea>`;
  const q=it.t==='fill'?esc(it.q).replace('___',`<input type="text" class="in" data-q="${it.id}" value="${esc(v)}" autocomplete="off" autocapitalize="off" aria-label="Answer">`):it.t==='mc'?esc(it.q):it.q;
- return `<div class="${cls}"><p class="q">${i+1}. ${q}</p>${body}${fb}</div>`}
-
+ return `<div class="${cls}"><p class="q">${q}</p>${body}${fb}</div>`}
+ 
 function viewAct(a){
  const [st]=status(a);const chk=S.checked[a.id];const sc=score(a);const rev=S.revs[a.id];
  const hint=S.local?'<div class="note">Your answers are saved only on this device. When you finish, use the button at the end to send them to your teacher on WhatsApp.</div>':'';
  return `<button class="s" id="back">← Back</button><h2 style="margin-top:14px">${esc(a.title)}</h2><p class="sub">${esc(a.tag)} · ${st}</p>${hint}
- <div class="split"><aside><details class="th" open><summary>Theory: read this before you start</summary><div class="b">${a.theory}</div></details></aside><div>
+ <div style="display:grid;gap:20px;align-items:start"><aside style="position:static;max-height:none"><details class="th" open><summary>Theory: read this before you start</summary><div class="b">${a.theory}</div></details></aside><div>
  ${a.items.map((it,i)=>renderItem(a,it,i)).join('')}
- ${chk?`<div class="card"><div class="sc">${sc.n} / ${sc.total}</div><p style="margin:4px 0">${sc.pend?'Open questions are waiting for your teacher to review them.':'Fully reviewed.'}</p>${rev?.c?`<div class="why" style="border-color:var(--g)"><b>Message from your teacher:</b> ${esc(rev.c)}</div>`:''}</div>`:''}
+ ${chk?`<div class="card"><div class="sc">${sc.n} /${sc.total}</div><p style="margin:4px 0">${sc.pend?'Open questions are waiting for your teacher to review them.':'Fully reviewed.'}</p>${rev?.c?`<div class="why" style="border-color:var(--g)"><b>Message from your teacher:</b> ${esc(rev.c)}</div>`:''}</div>`:''}
  ${chk?waCard(a):''}${uploadCard(a)}
  <div class="row"><button class="p" id="send">${chk?'Check again and submit':'Check and submit'}</button></div></div></div>`}
 
