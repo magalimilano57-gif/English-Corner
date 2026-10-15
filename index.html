@@ -77,7 +77,7 @@ input[type=file]{font:inherit;max-width:100%}input[type=file]::file-selector-but
 <body><header class="top" id="top"></header><main id="app"></main><footer class="ft">English Corner · Practice between classes</footer>
 <script>
 // Add activities here: {id,title,tag,theory,items:[...]}
-const ACTS=[];
+let ACTS=[];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
