@@ -77,7 +77,7 @@ input[type=file]{font:inherit;max-width:100%}input[type=file]::file-selector-but
 <body><header class="top" id="top"></header><main id="app"></main><footer class="ft">English Corner · Practice between classes</footer>
 <script>
 // Add activities here: {id,title,tag,theory,items:[...]}
-let ACTS=[];
+const ACTS=[];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -211,48 +211,20 @@ document.addEventListener('pointerdown',e=>{const w=e.target.closest('a[data-wa]
 function refresh(){const el=document.activeElement;if(S.tab==='teach'&&el&&/INPUT|TEXTAREA/.test(el.tagName))return;
  if(S.open&&el&&/INPUT|TEXTAREA/.test(el.tagName))return;render()}
 
-
 (async()=>{
- try {
-  const response = await fetch('./activities.json');
-  if (!response.ok) throw new Error('No se pudo cargar activities.json');
-
-  const data = await response.json();
-
-  ACTS.push(...data.map((activity, index) => ({
-   id: 'homework-' + index,
-   title: activity.worksheet_title,
-   tag: activity.level,
-   theory: activity.description,
-   items: activity.exercises.flatMap(exercise =>
-    exercise.items.map((question, i) => ({
-     id: `e${exercise.exercise_number}-q${i + 1}`,
-     t: 'open',
-     q: question.replace(/^\d+\.\s*/, ''),
-     a: []
-    }))
-   )
-  })));
-
+ ACTS.forEach(a=>{const s=lsGet('ec-sub-'+a.id);if(s){S.subs[a.id]=s;S.ans[a.id]=s.answers;S.checked[a.id]=true}});
+ render();
+ try{
+  if(typeof claude==='undefined')throw 0;
+  const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
+  if(!db)throw 0;S.db=db;db.collection('uploads').onSnapshot(sn=>{S.ups=sn.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(b.at||0)-(a.at||0));refresh()},()=>{});
+  S.owner=user?await user.isOwner():false;
+  S.canWrite=user?(await user.can('data.write'))!==false:true;S.ro=!S.owner&&!S.canWrite;if(S.ro)S.tab='prog';if(S.owner)ACTS.forEach(a=>db.doc('private/'+a.id).onSnapshot(sn=>{if(sn.exists){S.drafts[a.id]=sn.data();refresh()}},()=>{}));
   ACTS.forEach(a=>{
-   const s=lsGet('ec-sub-'+a.id);
-   if(s){
-    S.subs[a.id]=s;
-    S.ans[a.id]=s.answers;
-    S.checked[a.id]=true;
-   }
+   db.doc('subs/'+a.id).onSnapshot(sn=>{if(sn.exists){const d=sn.data();S.subs[a.id]=d;if(!S.ans[a.id]||!Object.keys(S.ans[a.id]).length){S.ans[a.id]=d.answers||{}}S.checked[a.id]=true;refresh()}},()=>{});
+   db.doc('reviews/'+a.id).onSnapshot(sn=>{if(sn.exists){S.revs[a.id]=sn.data();refresh()}},()=>{});
   });
-
-  S.local = true;
   render();
-
-
-} catch(e) {
-  console.error('Error al cargar las actividades:', e);
-  document.querySelector('#app').innerHTML =
-    '<div class="card"><h2>Error al cargar las actividades</h2><p>' +
-    String(e.message || e) +
-    '</p><p>Revisá la consola del navegador para más detalles.</p></div>';
-}
+ }catch(e){S.local=true;render()}
 })();
-
+</script></body></html>
