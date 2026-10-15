@@ -141,6 +141,41 @@ h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;backg
 .pill svg{vertical-align:-4px;margin-right:2px}
 .ft-k svg{vertical-align:-4px}
 .ico{font-size:0}
+/* bloque con secciones */
+.dots{display:flex;gap:6px;margin-top:8px}
+.dots i{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font:800 12px Fredoka,Nunito,sans-serif;font-style:normal;color:#1d2a13;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.jump{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 10px;color:var(--mut);font-weight:700}
+.jump a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--ink);background:var(--st);border:2px solid var(--sc);border-radius:99px;padding:4px 12px 4px 5px;font-weight:700;font-size:14px}
+.jump a b{width:22px;height:22px;border-radius:50%;background:var(--sc);display:grid;place-items:center;font-size:12px;color:#1d2a13}
+.sec{scroll-margin-top:96px}
+.sec-h{display:flex;gap:16px;align-items:center;background:var(--st,#e9f3d8);border:2px solid var(--sc,#8fb85a);border-radius:18px;padding:16px 20px;margin-bottom:10px}
+.sec-n{flex:none;width:52px;height:52px;border-radius:50%;background:var(--sc,#8fb85a);color:#1d2a13;display:grid;place-items:center;font-weight:800;font-size:24px;box-shadow:0 0 0 4px #fff}
+.sec-h h3{margin:6px 0 0;font-size:22px}
+.sec-h .chip{background:#fff}
+.sec-inst{margin:6px 0 0;color:var(--mut)}
+.sec .ex{border-left:5px solid var(--sc,#8fb85a)}
+.sec .ex.ok{border-left-color:var(--ok)}
+.sec .ex.no{border-left-color:var(--no)}
+.sec-res{margin-top:12px;background:var(--st);border:2px solid var(--sc)}
+.sep{display:flex;align-items:center;gap:14px;margin:44px 0 26px}
+.sep::before,.sep::after{content:"";flex:1;height:3px;border-radius:3px;background:repeating-linear-gradient(90deg,var(--g) 0 10px,transparent 10px 18px)}
+.sec details.th{background:var(--st)}
+details.th .b{overflow-x:auto}
+details.th table{border-collapse:collapse;width:100%;margin:8px 0;font-size:15px}
+details.th th,details.th td{border:1px solid var(--line);padding:6px 10px;text-align:left;background:#fff;vertical-align:top}
+details.th th{background:var(--gl);color:var(--gd)}
+@media (max-width:560px){.sec-h{padding:12px 14px;gap:12px}.sec-n{width:42px;height:42px;font-size:20px}details.th table{font-size:14px}}
+
+/* progreso */
+.pmsg{display:flex;align-items:center;gap:14px;background:var(--card);border:2px dashed var(--g);border-radius:16px;padding:14px 18px;margin:0 0 16px;font-size:19px;color:var(--gd)}
+.pmsg.ok{background:var(--okb);border:2px solid var(--ok);color:var(--ok)}
+.pblk{padding:18px 20px}
+.prows{margin-top:10px;display:grid;gap:10px}
+.prow{display:flex;gap:14px;align-items:flex-start;background:var(--st);border:2px solid var(--sc);border-radius:14px;padding:12px 14px}
+.prow .pbody{flex:1;min-width:0}
+.prow .chip{background:#fff}
+.sec-n.sm{width:36px;height:36px;font-size:17px;box-shadow:0 0 0 3px #fff}
+
 /* pie de página */
 .ft{position:relative;z-index:1;background:linear-gradient(180deg,rgba(228,239,208,0),var(--gl))}
 .ft-l{display:flex;justify-content:center;align-items:flex-end;gap:8px;margin-bottom:8px}
@@ -155,7 +190,7 @@ h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;backg
 <header class="top" id="top"></header><main id="app"></main><footer class="ft">English Corner · Practice between classes</footer>
 <script>
 // Add activities here: {id,title,tag,theory,items:[...]}
-const ACTS = [{"id": "hw-class-4-ex1", "title": "Exercise 1: Future Tenses Contrast", "tag": "B1 - Grammar", "theory": "<p><b>Future Tenses (Will, Going to, Present Continuous)<\/b><\/p><p>Elige la forma de futuro correcta. Presta atención al contexto (decisiones espontáneas, intenciones, predicciones o planes confirmados).<\/p>", "items": [{"id": "e1q1", "t": "mc", "q": "1. I've bought the tickets! We ___ to Tokyo next month to see the new smart city.", "o": ["fly", "are flying"], "a": "are flying", "why": "Planes confirmados (Present Continuous)."}, {"id": "e1q2", "t": "mc", "q": "2. Look at those dark clouds! It ___ heavily.", "o": ["is going to rain", "will rain"], "a": "is going to rain", "why": "Predicción con evidencia visual (Going to)."}, {"id": "e1q3", "t": "mc", "q": "3. A: 'I don't know how to use this new app.' B: 'Don't worry, I ___ you.'", "o": ["will show", "am showing"], "a": "will show", "why": "Decisión espontánea en el momento (Will)."}, {"id": "e1q4", "t": "mc", "q": "4. Next year, the government ___ a new renewable energy plant. The plans are already approved.", "o": ["is going to build", "building"], "a": "is going to build", "why": "Intención o plan con evidencia/aprobación (Going to)."}, {"id": "e1q5", "t": "mc", "q": "5. I think people ___ flying cars in 2050, but I'm not sure.", "o": ["will drive", "are driving"], "a": "will drive", "why": "Predicción general u opinión (Will)."}, {"id": "e1q6", "t": "mc", "q": "6. We ___ the environmental committee at 10 AM tomorrow. It's in my calendar.", "o": ["are meeting", "will meet"], "a": "are meeting", "why": "Acuerdo fijo en calendario (Present Continuous)."}, {"id": "e1q7", "t": "mc", "q": "7. A: 'We have no milk.' B: 'Really? I ___ to the supermarket now to buy some.'", "o": ["will go", "am going to go"], "a": "will go", "why": "Decisión espontánea al enterarse (Will)."}, {"id": "e1q8", "t": "mc", "q": "8. A: 'Why are you taking your laptop?' B: 'Because I ___ on the train.'", "o": ["am going to work", "will work"], "a": "am going to work", "why": "Intención ya pensada de antemano (Going to)."}, {"id": "e1q9", "t": "mc", "q": "9. The new smartphones ___ a lot of money next year.", "o": ["will probably cost", "are probably costing"], "a": "will probably cost", "why": "Predicción con 'probably' (Will)."}, {"id": "e1q10", "t": "mc", "q": "10. I ___ lunch with my boss on Friday to discuss the new project.", "o": ["am having", "will have"], "a": "am having", "why": "Acuerdo fijo o cita (Present Continuous)."}]}, {"id": "hw-class-4-ex2", "title": "Exercise 2: Conditionals", "tag": "B1 - Grammar", "theory": "<p><b>Conditionals: Real or Hypothetical?<\/b><\/p><p>Completa las oraciones con la forma correcta de los verbos entre paréntesis para formar First o Second Conditionals.<\/p>", "items": [{"id": "e2q1", "t": "open", "q": "1. If we ___ (use) more renewable energy, climate change ___ (slow) down. (First Conditional)", "why": "Revisa la estructura del First Conditional."}, {"id": "e2q2", "t": "open", "q": "2. If I ___ (be) the president, I ___ (ban) all plastic bags. (Second Conditional)", "why": "Revisa la estructura del Second Conditional."}, {"id": "e2q3", "t": "open", "q": "3. What ___ you ___ (do) if you ___ (lose) your smartphone? (Second Conditional)", "why": "Revisa la estructura de pregunta del Second Conditional."}, {"id": "e2q4", "t": "open", "q": "4. If she ___ (not/study) hard, she ___ (not/pass) the university exam tomorrow. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional."}, {"id": "e2q5", "t": "open", "q": "5. We ___ (save) a lot of water if everyone ___ (take) shorter showers. (Second Conditional)", "why": "Revisa la estructura del Second Conditional."}, {"id": "e2q6", "t": "open", "q": "6. If the new app ___ (be) successful, the company ___ (make) millions. (First Conditional)", "why": "Revisa la estructura del First Conditional."}, {"id": "e2q7", "t": "open", "q": "7. I ___ (buy) an electric car if I ___ (have) enough money, but they are too expensive. (Second Conditional)", "why": "Revisa la estructura del Second Conditional."}, {"id": "e2q8", "t": "open", "q": "8. If we ___ (not/recycle) our garbage, the pollution ___ (get) worse. (First Conditional)", "why": "Revisa la estructura negativa del First Conditional."}]}, {"id": "hw-class-4-ex3", "title": "Exercise 3: Spot the B1 Mistakes", "tag": "B1 - Writing", "theory": "<p><b>Spot the B1 Mistakes<\/b><\/p><p>Encuentra el error gramatical en cada oración y escribe la versión correcta. ¡Busca errores clásicos de condicionales y futuros!<\/p>", "items": [{"id": "e3q1", "t": "open", "q": "1. If it will rain tomorrow, we will stay at home.", "why": "Recuerda las reglas de los condicionales."}, {"id": "e3q2", "t": "open", "q": "2. I promise I am going to help you with your homework tonight.", "why": "Revisa los tiempos futuros para promesas."}, {"id": "e3q3", "t": "open", "q": "3. If I have a million dollars, I would travel around the world.", "why": "Revisa la mezcla incorrecta de condicionales."}, {"id": "e3q4", "t": "open", "q": "4. What would you do if you win the lottery?", "why": "Revisa el Second Conditional."}, {"id": "e3q5", "t": "open", "q": "5. We are going to a meeting at 3 PM tomorrow, it's on our schedule.", "why": "Revisa el uso de present continuous para planes fijos."}]}, {"id": "hw-class-4-ex4", "title": "Exercise 4: Key Word Transformations", "tag": "B1 - Writing", "theory": "<p><b>Key Word Transformations (Integrated Review)<\/b><\/p><p>Reescribe las oraciones manteniendo el significado exacto, usando la palabra entre paréntesis.<\/p>", "items": [{"id": "e4q1", "t": "open", "q": "1. It is a good idea to install this new security app. (SHOULD) -> You ____________________ this new security app.", "why": "Usa should para dar consejos."}, {"id": "e4q2", "t": "open", "q": "2. It is not necessary for us to print these documents. (HAVE) -> We ____________________ print these documents.", "why": "Usa don't have to para falta de obligación."}, {"id": "e4q3", "t": "open", "q": "3. I am planning to buy a new smart TV next week. (GOING) -> I ____________________ a new smart TV next week.", "why": "Usa going to para planes."}, {"id": "e4q4", "t": "open", "q": "4. I advise you to recycle plastic. (OUGHT) -> You ____________________ plastic.", "why": "Usa ought to para consejos."}, {"id": "e4q5", "t": "open", "q": "5. The man is a scientist. He invented the new battery. (WHO) -> The man ____________________ is a scientist.", "why": "Usa una relative clause."}, {"id": "e4q6", "t": "open", "q": "6. It is strictly prohibited to throw batteries in the normal bin. (MUSTN'T) -> You ____________________ batteries in the normal bin.", "why": "Usa mustn't para prohibiciones."}]}];
+const ACTS = [];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -183,32 +218,52 @@ function renderItem(a,it,i){
   else if(ok(it,v)){cls+=' ok';fb='<div class="fb good">Correct!</div>'}
   else{cls+=' no';fb=`<div class="fb bad">${v?'Not yet.':'You did not answer this one.'}</div><div class="why"><b>Why:</b> ${it.why}<br><small>Review the theory above and try again.</small></div>`}}
  let body='';
- if(it.t==='mc')body=it.o.map(o=>`<label class="opt"><input type="radio" name="${it.id}" value="${esc(o)}" ${v===o?'checked':''} data-q="${it.id}">${esc(o)}</label>`).join('');
+ if(it.t==='mc')body=it.o.map(o=>`<label class="opt"><input type="radio" name="${it.id}" value="${esc(o)}" ${v===o?'checked':''} data-q="${it.id}" data-a="${a.id}">${esc(o)}</label>`).join('');
  else if(it.t==='fill')body='';
- else body=`<textarea data-q="${it.id}" aria-label="Your answer">${esc(v)}</textarea>`;
- const q=it.t==='fill'?esc(it.q).replace('___',`<input type="text" class="in" data-q="${it.id}" value="${esc(v)}" autocomplete="off" autocapitalize="off" aria-label="Answer">`):it.t==='mc'?esc(it.q):it.q;
+ else body=`<textarea data-q="${it.id}" data-a="${a.id}" aria-label="Your answer">${esc(v)}</textarea>`;
+ const q=it.t==='fill'?esc(it.q).replace('___',`<input type="text" class="in" data-q="${it.id}" data-a="${a.id}" value="${esc(v)}" autocomplete="off" autocapitalize="off" aria-label="Answer">`):it.t==='mc'?esc(it.q):it.q;
  return `<div class="${cls}"><p class="q">${q}</p>${body}${fb}</div>`}
  
-function viewAct(a){
- const [st]=status(a);const chk=S.checked[a.id];const sc=score(a);const rev=S.revs[a.id];
+let BLOCKS=[];
+function buildBlocks(){const m=new Map();
+ ACTS.forEach(a=>{const key=a.block||a.id;if(!m.has(key))m.set(key,{id:'b-'+String(key).toLowerCase().replace(/[^a-z0-9]+/g,'-'),title:a.block||a.title,tag:a.tag||'',grouped:!!a.block,acts:[]});m.get(key).acts.push(a)});
+ BLOCKS=[...m.values()];
+ BLOCKS.forEach(b=>{if(b.grouped){const lv=[...new Set(b.acts.map(a=>String(a.tag||'').split(' - ')[0]).filter(Boolean))];b.tag=lv.join(' · ')}})}
+const SECC=[['#8fb85a','#eaf3d9'],['#c2c94e','#f4f6d6'],['#5fb391','#dcf1e8'],['#5aa6b0','#dcedf0']];
+const short=t=>String(t).replace(/^Exercise\s*\d+:\s*/i,'');
+function blockScore(b){let n=0,total=0,pend=0;b.acts.forEach(a=>{const s=score(a);n+=s.n;total+=s.total;pend+=s.pend});return{n,total,pend}}
+function blockStatus(b){const d=b.acts.filter(a=>S.subs[a.id]).length;if(!d)return['Not started',0];if(d<b.acts.length)return['In progress',1];return b.acts.every(a=>S.revs[a.id])?['Reviewed',2]:['Submitted',1]}
+
+function viewAct(b){
+ const [st]=blockStatus(b);const multi=b.acts.length>1;const chk=b.acts.every(a=>S.checked[a.id]);const sc=blockScore(b);
  const hint=S.local?'<div class="note">Your answers are saved only on this device. When you finish, use the button at the end to send them to your teacher on WhatsApp.</div>':'';
- return `<button class="s" id="back">← Back</button><h2 style="margin-top:14px">${esc(a.title)}</h2><p class="sub">${esc(a.tag)} · ${st}</p>${hint}
- <div style="display:grid;gap:20px;align-items:start"><aside style="position:static;max-height:none"><details class="th" open><summary>Theory: read this before you start</summary><div class="b">${a.theory}</div></details></aside><div>
- ${a.items.map((it,i)=>renderItem(a,it,i)).join('')}
- ${chk?`<div class="card"><div class="sc">${sc.n} /${sc.total}</div><p style="margin:4px 0">${sc.pend?'Open questions are waiting for your teacher to review them.':'Fully reviewed.'}</p>${rev?.c?`<div class="why" style="border-color:var(--g)"><b>Message from your teacher:</b> ${esc(rev.c)}</div>`:''}</div>`:''}
- ${chk?waCard(a):''}${uploadCard(a)}
- <div class="row"><button class="p" id="send">${chk?'Check again and submit':'Check and submit'}</button></div></div></div>`}
+ const jump=multi?`<div class="jump"><span>Jump to:</span>${b.acts.map((a,i)=>{const c=SECC[i%SECC.length];return `<a href="#sec-${i}" style="--sc:${c[0]};--st:${c[1]}"><b>${i+1}</b> ${esc(short(a.title))}</a>`}).join('')}</div>`:'';
+ const secs=b.acts.map((a,i)=>{const c=SECC[i%SECC.length];const s1=score(a);const ck=S.checked[a.id];
+  const head=multi?`<div class="sec-h"><span class="sec-n">${i+1}</span><div><span class="chip">${esc(a.tag)} · ${a.items.length} exercises</span><h3>${esc(short(a.title))}</h3>${a.inst?`<p class="sec-inst">${esc(a.inst)}</p>`:''}</div></div>`:(a.inst?`<div class="note">${esc(a.inst)}</div>`:'');
+  const theory=a.theory?`<details class="th" open><summary>Theory: read this before you start</summary><div class="b">${a.theory}</div></details>`:'';
+  const res=ck&&multi?`<div class="card sec-res"><b>Section ${i+1} result:</b> ${s1.n} / ${s1.total}${s1.pend?` · ${s1.pend} open questions waiting for your teacher`:''}</div>`:'';
+  return `${i?`<div class="sep">${LOGO(26)}</div>`:''}<section class="sec" id="sec-${i}" style="--sc:${c[0]};--st:${c[1]}">${head}${theory}${a.items.map((it,j)=>renderItem(a,it,j)).join('')}${res}</section>`}).join('');
+ const msgs=b.acts.filter(a=>S.revs[a.id]?.c).map(a=>`<div class="why" style="border-color:var(--g)"><b>Message from your teacher${multi?' ('+esc(short(a.title))+')':''}:</b> ${esc(S.revs[a.id].c)}</div>`).join('');
+ const sum=chk?`<div class="card"><div class="sc">${sc.n} /${sc.total}</div><p style="margin:4px 0">${sc.pend?'Open questions are waiting for your teacher to review them.':'Fully reviewed.'}</p>${msgs}</div>`:'';
+ return `<button class="s" id="back">← Back</button><h2 style="margin-top:14px">${esc(b.title)}</h2><p class="sub">${esc(b.tag)} · ${st}</p>${hint}${jump}${secs}<div class="sep">${LOGO(26)}</div>${sum}${chk?waCard(b):''}${uploadCard({id:b.id})}<div class="row"><button class="p" id="send">${chk?'Check again and submit':'Check and submit'}</button></div>`}
 
 function viewList(){
  if(!ACTS.length)return `<h2 id="acts">Your activities</h2><div class="card empty"><span class="big">${LOGO(88)}</span><h3 style="margin:0 0 6px">No activities yet</h3><p style="margin:0;color:var(--mut)">Your next activity will show up here. See you after the next class!</p></div>`;
- return `<h2 id="acts">Your activities</h2><p class="sub">Pick one, read the theory and complete the exercises.</p><div class="grid">`+ACTS.map((a,i)=>{const[st,k]=status(a);const sc=score(a);
- return `<div class="card act" data-open="${a.id}" tabindex="0" role="button"><div class="act-l"><span class="num">${i+1}</span><div><h3 style="margin:0">${esc(a.title)}</h3><div style="color:var(--mut);font-size:14px">${esc(a.tag)} · ${a.items.length} exercises</div></div></div><span class="chip ${k===2?'ok':''}">${st}${k?' · '+sc.n+'/'+sc.total:''}</span></div>`}).join('')+'</div>'}
+ return `<h2 id="acts">Your activities</h2><p class="sub">Pick one, read the theory and complete the exercises.</p><div class="grid">`+BLOCKS.map((b,i)=>{const[st,k]=blockStatus(b);const sc=blockScore(b);const multi=b.acts.length>1;const nEx=b.acts.reduce((s,a)=>s+a.items.length,0);
+ return `<div class="card act" data-open="${b.id}" tabindex="0" role="button"><div class="act-l"><span class="num">${i+1}</span><div><h3 style="margin:0">${esc(b.title)}</h3><div style="color:var(--mut);font-size:14px">${esc(b.tag)} · ${multi?b.acts.length+' sections · ':''}${nEx} exercises</div>${multi?`<div class="dots">${b.acts.map((a,j)=>`<i style="background:${SECC[j%SECC.length][0]}">${j+1}</i>`).join('')}</div>`:''}</div></div><span class="chip ${k===2?'ok':''}">${st}${k?' · '+sc.n+'/'+sc.total:''}</span></div>`}).join('')+'</div>'}
 
 function viewProg(){
  if(!ACTS.length)return '<h2>Progress</h2><p class="sub">Your progress will appear here once you have your first activity.</p>';
- const done=ACTS.filter(a=>S.subs[a.id]).length;
- return `<h2>Progress</h2><p class="sub">${done} of ${ACTS.length} activities submitted.</p><div class="bar"><i style="width:${done/ACTS.length*100}%"></i></div>`+ACTS.map(a=>{const[st,k]=status(a);const sc=score(a);const r=S.revs[a.id];const s=S.subs[a.id];
- return `<div class="card"><div class="row" style="justify-content:space-between;margin:0"><h3 style="margin:0">${esc(a.title)}</h3><span class="chip ${k===2?'ok':''}">${st}</span></div>${s?`<p style="margin:8px 0 0">Result: <b>${sc.n} / ${sc.total}</b>${sc.pend?` (${sc.pend} open questions not reviewed yet)`:''}<br><small style="color:var(--mut)">Submitted on ${new Date(s.at).toLocaleDateString('en-GB')}</small></p>`:'<p style="margin:8px 0 0;color:var(--mut)">Not submitted yet.</p>'}${r?.c?`<p class="why" style="border-color:var(--g)"><b>Feedback:</b> ${esc(r.c)}</p>`:''}</div>`}).join('')}
+ const done=ACTS.filter(a=>S.subs[a.id]).length,all=done===ACTS.length,left=ACTS.length-done;
+ const unit=BLOCKS.some(b=>b.grouped)?'section':'activity',pl=n=>n===1?unit:(unit==='activity'?'activities':'sections');
+ const msg=all?`<div class="pmsg ok">${LOGO(36)}<div><b>Well done!</b> Time to rest.</div></div>`:`<div class="pmsg">${LOGO(36)}<div><b>Keep going!</b> ${left} ${pl(left)} left.</div></div>`;
+ return `<h2>Progress</h2><p class="sub">${done} of ${ACTS.length} ${pl(ACTS.length)} submitted.</p>${msg}<div class="bar"><i style="width:${done/ACTS.length*100}%"></i></div>`+BLOCKS.map(b=>{
+  const [st,k]=blockStatus(b);const sc=blockScore(b);const multi=b.acts.length>1;const d=b.acts.filter(a=>S.subs[a.id]).length;
+  const rows=b.acts.map((a,i)=>{const [s2,k2]=status(a);const s1=score(a);const r=S.revs[a.id];const s=S.subs[a.id];const c=SECC[i%SECC.length];
+   const info=s?`<div>Result: <b>${s1.n} / ${s1.total}</b>${s1.pend?` (${s1.pend} open questions not reviewed yet)`:''}<br><small style="color:var(--mut)">Submitted on ${new Date(s.at).toLocaleDateString('en-GB')}</small></div>`:'<div style="color:var(--mut)">Not submitted yet.</div>';
+   const fb=r?.c?`<p class="why" style="border-color:var(--g)"><b>Feedback:</b> ${esc(r.c)}</p>`:'';
+   return multi?`<div class="prow" style="--sc:${c[0]};--st:${c[1]}"><span class="sec-n sm">${i+1}</span><div class="pbody"><div class="row" style="justify-content:space-between;margin:0 0 4px"><b>${esc(short(a.title))}</b><span class="chip ${k2===2?'ok':''}">${s2}</span></div>${info}${fb}</div></div>`:`<div style="margin-top:8px">${info}${fb}</div>`}).join('');
+  return `<div class="card pblk"><div class="row" style="justify-content:space-between;margin:0"><h3 style="margin:0">${esc(b.title)}</h3><span class="chip ${k===2?'ok':''}">${st}${d?' · '+sc.n+'/'+sc.total:''}</span></div>${multi?`<div class="bar"><i style="width:${d/b.acts.length*100}%"></i></div><div class="prows">${rows}</div>`:rows}</div>`}).join('')}
 
 function viewTeach(){
  const subs=ACTS.filter(a=>S.subs[a.id]);
@@ -222,16 +277,19 @@ function viewTeach(){
  <textarea data-c="${a.id}" placeholder="General message for the student and her family (optional)">${esc(r.c||'')}</textarea><div class="row"><button class="s" data-save="${a.id}">Save draft (private)</button><button class="p" data-pub="${a.id}">Publish feedback</button></div></div>`}).join('')}
 
 const okImg=s=>/^data:image\/jpeg;base64,[A-Za-z0-9+\/=]+$/.test(s||'');
-const actTitle=id=>ACTS.find(a=>a.id===id)?.title||(id==='general'?'General upload':id);
+const actTitle=id=>BLOCKS.find(b=>b.id===id)?.title||ACTS.find(a=>a.id===id)?.title||(id==='general'?'General upload':id);
 function upBtn(id,t){return `<button class="s" data-del="${esc(id)}" style="padding:2px 8px;font-size:13px">${t}</button>`}
 const WA='5491163667870';
 const plain=h=>String(h||'').replace(/<br\s*\/?>/gi,' ').replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
-function waMsg(a){const sc=score(a),L=['Hi teacher! Here is my work: '+a.title,''];
- a.items.forEach((it,i)=>{const v=(S.ans[a.id]||{})[it.id]||'',n=(i+1)+'. ';
-  if(it.t==='open')L.push(n+'(open question) '+(v||'(no answer)'));
-  else if(ok(it,v))L.push(n+'✅ '+v);
-  else L.push(n+'❌ '+(v||'(no answer)')+' → correct: '+(it.t==='mc'?it.a:it.a[0])+'\n    Why: '+plain(it.why))});
- L.push('','Score: '+sc.n+'/'+sc.total+(sc.pend?' (+ '+sc.pend+' open to review)':''));return L.join('\n')}
+function waMsg(b){const multi=b.acts.length>1,L=['Hi teacher! Here is my work: '+b.title,''];let N=0,T=0,P=0;
+ b.acts.forEach(a=>{const sc=score(a);N+=sc.n;T+=sc.total;P+=sc.pend;
+  if(multi)L.push('— '+a.title+' —');
+  a.items.forEach((it,i)=>{const v=(S.ans[a.id]||{})[it.id]||'',n=(i+1)+'. ';
+   if(it.t==='open')L.push(n+'(open question) '+(v||'(no answer)'));
+   else if(ok(it,v))L.push(n+'✅ '+v);
+   else L.push(n+'❌ '+(v||'(no answer)')+' → correct: '+(it.t==='mc'?it.a:it.a[0])+(multi?'':'\n    Why: '+plain(it.why)))});
+  if(multi)L.push('Section score: '+sc.n+'/'+sc.total+(sc.pend?' (+ '+sc.pend+' open to review)':''),'')});
+ L.push('Total score: '+N+'/'+T+(P?' (+ '+P+' open to review)':''));return L.join('\n')}
 const waUrl=a=>'https://wa.me/'+WA+'?text='+encodeURIComponent(a?waMsg(a):'Hi teacher!');
 function waCard(a){return `<div class="card"><h3 style="margin-top:0">Send your work to your teacher</h3><p style="margin:0 0 12px;color:var(--mut)">This opens WhatsApp with your answers and corrections already written. Just press send. If you did anything on paper, attach the photo in the chat.</p><a class="wa" data-wa="${a.id}" href="${waUrl(a)}" target="_blank" rel="noopener">Send by WhatsApp</a></div>`}
 function uploadCard(a){
@@ -253,7 +311,7 @@ $('.ft').insertAdjacentHTML('afterbegin','<div class="ft-l">'+LOGO(26)+LOGO(38)+
 $('.ft').insertAdjacentHTML('beforeend','<div class="ft-k">Keep growing, one grape at a time '+LOGO(18)+'</div>');
 const TIPS=[['Piece of cake','Something very easy'],['Break a leg','Good luck!'],['Once in a blue moon','Very rarely'],['Hit the books','To study hard'],["It's raining cats and dogs","It's raining a lot"],['Better late than never','Doing something late is better than not doing it'],['Under the weather','Feeling a little sick'],['The ball is in your court',"It's your turn to decide"],['Cost an arm and a leg','Very expensive'],['Spill the beans','To tell a secret']];
 function heroHTML(){return `<section class="hero"><span class="star s1">★</span><span class="star s2">✦</span><span class="star s3">★</span><span class="bub b1">Hello!</span><span class="bub b3">ABC</span><span class="bub b2">Well done!</span>
- <div class="hero-t"><span class="pill">${LOGO(18)} Practice between classes</span><h1>Welcome to your English Corner</h1><p>Your practice for the weeks between classes: read the theory, complete the exercises and see how you are progressing.</p><a class="wa" href="#acts">Start practicing</a></div>
+ <div class="hero-t"><h1>Welcome to your English Corner</h1><p>Your practice for the weeks between classes: read the theory, complete the exercises and see how you are progressing.</p><a class="wa" href="#acts">Start practicing</a></div>
  <div class="hero-art">${LOGO(130)}</div></section>`}
 function featHTML(){return `<div class="feat">
  <div class="card"><div class="ico">${IC.book}</div><h3>Read the theory</h3><p>Short and clear explanations before every activity.</p></div>
@@ -261,28 +319,28 @@ function featHTML(){return `<div class="feat">
  <div class="card"><div class="ico">${IC.sprout}</div><h3>Keep growing</h3><p>Check your score and read your teacher's feedback.</p></div></div>`}
 function tipHTML(){const t=TIPS[Math.floor(Date.now()/864e5)%TIPS.length];return `<div class="card tip"><div class="ico">💬</div><div><div class="lab">PHRASE OF THE DAY</div><div class="ph">“${esc(t[0])}”</div><div style="color:var(--mut)">${esc(t[1])}</div></div></div>`}
 
-function render(){
+function render(){buildBlocks();
  const tabs=S.ro?[['prog','Progress']]:[['act','Activities'],['up','My work'],['prog','Progress']];if(S.owner)tabs.push(['teach','Review']);
  let body;
- if(S.tab==='act')body=S.open?viewAct(ACTS.find(a=>a.id===S.open)):viewList();
+ if(S.tab==='act')body=S.open&&BLOCKS.find(b=>b.id===S.open)?viewAct(BLOCKS.find(b=>b.id===S.open)):viewList();
  else if(S.tab==='prog')body=viewProg();else if(S.tab==='up')body='<h2>My work</h2><p class="sub">Upload photos of anything you did on paper.</p>'+uploadCard({id:'general'});else body=viewTeach();
  $('#top').innerHTML=`<div class="bar-in"><button class="brand" data-tab="act" aria-label="Home">${LOGO(40)}<span>English Corner</span></button><nav>${tabs.map(([k,l])=>`<button data-tab="${k}" class="${S.tab===k?'on':''}">${l}</button>`).join('')}</nav></div>`;
  const hero=S.tab==='act'&&!S.open?heroHTML()+featHTML():'';
  $('#app').innerHTML=hero+body}
 
-function setAns(q,v){const a=S.open;(S.ans[a]=S.ans[a]||{})[q]=v}
-document.addEventListener('input',e=>{const q=e.target.dataset?.q;if(q)setAns(q,e.target.value)});
-document.addEventListener('change',e=>{const q=e.target.dataset?.q;if(q)setAns(q,e.target.value)});
+function setAns(a,q,v){if(!a)return;(S.ans[a]=S.ans[a]||{})[q]=v}
+document.addEventListener('input',e=>{const q=e.target.dataset?.q;if(q)setAns(e.target.dataset.a,q,e.target.value)});
+document.addEventListener('change',e=>{const q=e.target.dataset?.q;if(q)setAns(e.target.dataset.a,q,e.target.value)});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.dataset?.open)S.open=e.target.dataset.open,render()});
 document.addEventListener('click',async e=>{
  const t=e.target.closest('[data-tab],[data-open],#back,#send,[data-save],[data-pub]');if(!t)return;
  if(t.dataset.tab){S.tab=t.dataset.tab;S.open=null;render();window.scrollTo(0,0)}
  else if(t.dataset.open){S.open=t.dataset.open;render();window.scrollTo(0,0)}
  else if(t.id==='back'){S.open=null;render()}
- else if(t.id==='send'){const id=S.open;S.checked[id]=true;
-  const d={answers:S.ans[id]||{},at:Date.now()};S.subs[id]=d;lsSet('ec-sub-'+id,d);
-  if(S.db&&S.canWrite){try{await S.db.doc('subs/'+id).set(d);S.local=false}catch(err){S.local=true}}else S.local=true;
-  render();window.scrollTo(0,document.body.scrollHeight)}
+ else if(t.id==='send'){const b=BLOCKS.find(x=>x.id===S.open);let fail=false;
+  for(const a of b.acts){S.checked[a.id]=true;const d={answers:S.ans[a.id]||{},at:Date.now()};S.subs[a.id]=d;lsSet('ec-sub-'+a.id,d);
+   if(S.db&&S.canWrite){try{await S.db.doc('subs/'+a.id).set(d)}catch(err){fail=true}}else fail=true}
+  S.local=fail;render();window.scrollTo(0,document.body.scrollHeight)}
  else if(t.dataset.save||t.dataset.pub){const pub=!!t.dataset.pub,id=t.dataset.save||t.dataset.pub,r={m:{},c:$('[data-c="'+id+'"]').value};
   ACTS.find(a=>a.id===id).items.filter(i=>i.t==='open').forEach(it=>{const rd=document.querySelector(`input[name="r-${id}-${it.id}"]:checked`);
    const n=document.querySelector(`[data-n="${id}|${it.id}"]`).value;if(rd)r.m[it.id]={ok:rd.value==='1',n}});
@@ -305,7 +363,7 @@ if(!matchMedia('(prefers-reduced-motion:reduce)').matches)document.addEventListe
  for(let i=0;i<6;i++){const g=document.createElement('span');g.className='grape';g.innerHTML=LOGO(16+Math.round(Math.random()*12));g.style.left=e.clientX-14+'px';g.style.top=e.clientY-14+'px';document.body.appendChild(g);
   const a=Math.PI*2*i/6+Math.random()*.6,r=34+Math.random()*34;
   g.animate([{transform:'translate(0,0) scale(.5) rotate(0deg)',opacity:1},{transform:`translate(${Math.cos(a)*r}px,${Math.sin(a)*r-14}px) scale(1) rotate(${(Math.random()-.5)*90}deg)`,opacity:1,offset:.6},{transform:`translate(${Math.cos(a)*r*1.15}px,${Math.sin(a)*r*1.15+26}px) scale(.9) rotate(${(Math.random()-.5)*160}deg)`,opacity:0}],{duration:750,easing:'ease-out'}).onfinish=()=>g.remove()}});
-document.addEventListener('pointerdown',e=>{const w=e.target.closest('a[data-wa]');if(w)w.href=waUrl(ACTS.find(x=>x.id===w.dataset.wa))},true);
+document.addEventListener('pointerdown',e=>{const w=e.target.closest('a[data-wa]');if(w)w.href=waUrl(BLOCKS.find(x=>x.id===w.dataset.wa))},true);
 function refresh(){const el=document.activeElement;if(S.tab==='teach'&&el&&/INPUT|TEXTAREA/.test(el.tagName))return;
  if(S.open&&el&&/INPUT|TEXTAREA/.test(el.tagName))return;render()}
 
@@ -315,7 +373,7 @@ function refresh(){const el=document.activeElement;if(S.tab==='teach'&&el&&/INPU
   const res = await fetch('./activities.json?t=' + new Date().getTime());
   if (!res.ok) throw new Error('No se encontró el archivo');
   const data = await res.json();
-  /* vista previa */
+  ACTS.push(...data);
  } catch(e) {
   console.error("No se pudo cargar activities.json.", e);
  }
