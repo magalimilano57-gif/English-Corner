@@ -131,49 +131,93 @@
         "id": "e2q1",
         "t": "open",
         "q": "1. If the weather ___ (be) good tomorrow, we ___ (go) to the beach. (Prediction)",
-        "why": "Review First Conditional structure for predictions (will)."
+        "why": "Review First Conditional structure for predictions (will).",
+        "a": [
+          "is, will go",
+          "is, 'll go",
+          "If the weather is good tomorrow, we will go to the beach.",
+          "If the weather is good tomorrow, we'll go to the beach."
+        ]
       },
       {
         "id": "e2q2",
         "t": "open",
         "q": "2. If you ___ (feel) tired, you ___ (take) a break. (Advice)",
-        "why": "Review First Conditional using a modal verb for advice (should)."
+        "why": "Review First Conditional using a modal verb for advice (should).",
+        "a": [
+          "feel, should take",
+          "If you feel tired, you should take a break."
+        ]
       },
       {
         "id": "e2q3",
         "t": "open",
         "q": "3. If students ___ (want) to pass the exam, they ___ (study) hard. (Obligation)",
-        "why": "Review First Conditional using a modal verb for obligation (must / have to)."
+        "why": "Review First Conditional using a modal verb for obligation (must / have to).",
+        "a": [
+          "want, must study",
+          "want, have to study",
+          "If students want to pass the exam, they must study hard.",
+          "If students want to pass the exam, they have to study hard."
+        ]
       },
       {
         "id": "e2q4",
         "t": "open",
         "q": "4. If she ___ (not/hurry), she ___ (miss) the bus! (Prediction)",
-        "why": "Review negative First Conditional structure for predictions (won't)."
+        "why": "Review negative First Conditional structure for predictions (won't).",
+        "a": [
+          "doesn't hurry, will miss",
+          "does not hurry, will miss",
+          "doesn't hurry, 'll miss",
+          "If she doesn't hurry, she will miss the bus!",
+          "If she does not hurry, she will miss the bus!",
+          "If she doesn't hurry, she'll miss the bus!"
+        ]
       },
       {
         "id": "e2q5",
         "t": "open",
         "q": "5. If you ___ (finish) your vegetables, you ___ (eat) some chocolate. (Permission)",
-        "why": "Review First Conditional using a modal verb for permission (can)."
+        "why": "Review First Conditional using a modal verb for permission (can).",
+        "a": [
+          "finish, can eat",
+          "If you finish your vegetables, you can eat some chocolate."
+        ]
       },
       {
         "id": "e2q6",
         "t": "open",
         "q": "6. If it ___ (rain) tomorrow, you ___ (not/have to) water the garden. (No obligation)",
-        "why": "Review First Conditional using a modal verb for lack of obligation (don't have to)."
+        "why": "Review First Conditional using a modal verb for lack of obligation (don't have to).",
+        "a": [
+          "rains, don't have to",
+          "rains, do not have to",
+          "If it rains tomorrow, you don't have to water the garden.",
+          "If it rains tomorrow, you do not have to water the garden."
+        ]
       },
       {
         "id": "e2q7",
         "t": "open",
         "q": "7. If we ___ (use) less plastic, we ___ (protect) the ocean. (Prediction)",
-        "why": "Review First Conditional structure for predictions (will)."
+        "why": "Review First Conditional structure for predictions (will).",
+        "a": [
+          "use, will protect",
+          "use, 'll protect",
+          "If we use less plastic, we will protect the ocean.",
+          "If we use less plastic, we'll protect the ocean."
+        ]
       },
       {
         "id": "e2q8",
         "t": "open",
         "q": "8. If you ___ (see) a red traffic light, you ___ (stop) your car immediately. (Strict Rule)",
-        "why": "Review First Conditional using a modal verb for a strict rule (must)."
+        "why": "Review First Conditional using a modal verb for a strict rule (must).",
+        "a": [
+          "see, must stop",
+          "If you see a red traffic light, you must stop your car immediately."
+        ]
       }
     ]
   },
@@ -189,31 +233,58 @@
         "id": "e3q1",
         "t": "open",
         "q": "1. If I will see him at the party, I will tell him the good news.",
-        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'."
+        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'.",
+        "a": [
+          "If I see him at the party, I will tell him the good news.",
+          "If I see him at the party, I'll tell him the good news.",
+          "see"
+        ]
       },
       {
         "id": "e3q2",
         "t": "open",
         "q": "2. Look at that tree! It will fall down!",
-        "why": "Review future tenses for predictions based on present evidence."
+        "why": "Review future tenses for predictions based on present evidence.",
+        "a": [
+          "Look at that tree! It is going to fall down!",
+          "Look at that tree! It's going to fall down!",
+          "is going to",
+          "is going to fall down"
+        ]
       },
       {
         "id": "e3q3",
         "t": "open",
         "q": "3. I promise I am going to help you with your project tomorrow.",
-        "why": "Review future tenses for promises."
+        "why": "Review future tenses for promises.",
+        "a": [
+          "I promise I will help you with your project tomorrow.",
+          "I promise I'll help you with your project tomorrow.",
+          "will",
+          "will help"
+        ]
       },
       {
         "id": "e3q4",
         "t": "open",
         "q": "4. If you have a headache, you will take an aspirin.",
-        "why": "Use a modal verb for advice instead of a future prediction."
+        "why": "Use a modal verb for advice instead of a future prediction.",
+        "a": [
+          "If you have a headache, you should take an aspirin.",
+          "should take",
+          "you should take an aspirin"
+        ]
       },
       {
         "id": "e3q5",
         "t": "open",
         "q": "5. If the robot will break, we will call the engineer.",
-        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'."
+        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'.",
+        "a": [
+          "If the robot breaks, we will call the engineer.",
+          "If the robot breaks, we'll call the engineer.",
+          "breaks"
+        ]
       }
     ]
   },
@@ -229,37 +300,69 @@
         "id": "e4q1",
         "t": "open",
         "q": "1. I advise you to talk to the manager if you have a problem. (SHOULD) -> If you have a problem, you ____________________ to the manager.",
-        "why": "Use should to give advice."
+        "why": "Use should to give advice.",
+        "a": [
+          "should talk",
+          "If you have a problem, you should talk to the manager."
+        ]
       },
       {
         "id": "e4q2",
         "t": "open",
         "q": "2. It is strictly prohibited to use smartphones if you are driving. (MUSTN'T) -> If you are driving, you ____________________ smartphones.",
-        "why": "Use mustn't for prohibitions."
+        "why": "Use mustn't for prohibitions.",
+        "a": [
+          "mustn't use",
+          "must not use",
+          "If you are driving, you mustn't use smartphones.",
+          "If you are driving, you must not use smartphones."
+        ]
       },
       {
         "id": "e4q3",
         "t": "open",
         "q": "3. I plan to travel to Japan next year. I have the intention. (GOING) -> I ____________________ to Japan next year.",
-        "why": "Use going to for plans and intentions."
+        "why": "Use going to for plans and intentions.",
+        "a": [
+          "am going to travel",
+          "'m going to travel",
+          "I am going to travel to Japan next year.",
+          "I'm going to travel to Japan next year."
+        ]
       },
       {
         "id": "e4q4",
         "t": "open",
         "q": "4. It is not necessary for you to wear a tie if you work on Fridays. (HAVE) -> If you work on Fridays, you ____________________ a tie.",
-        "why": "Use don't have to for lack of obligation."
+        "why": "Use don't have to for lack of obligation.",
+        "a": [
+          "don't have to wear",
+          "do not have to wear",
+          "If you work on Fridays, you don't have to wear a tie.",
+          "If you work on Fridays, you do not have to wear a tie."
+        ]
       },
       {
         "id": "e4q5",
         "t": "open",
         "q": "5. We have an appointment to meet the doctor at 4 PM tomorrow. (ARE) -> We ____________________ the doctor at 4 PM tomorrow.",
-        "why": "Use Present Continuous for fixed arrangements."
+        "why": "Use Present Continuous for fixed arrangements.",
+        "a": [
+          "are meeting",
+          "'re meeting",
+          "We are meeting the doctor at 4 PM tomorrow.",
+          "We're meeting the doctor at 4 PM tomorrow."
+        ]
       },
       {
         "id": "e4q6",
         "t": "open",
         "q": "6. It is a strict company rule to wear a safety helmet if you enter the factory. (MUST) -> If you enter the factory, you ____________________ a safety helmet.",
-        "why": "Use must for strict rules and obligations."
+        "why": "Use must for strict rules and obligations.",
+        "a": [
+          "must wear",
+          "If you enter the factory, you must wear a safety helmet."
+        ]
       }
     ]
   }

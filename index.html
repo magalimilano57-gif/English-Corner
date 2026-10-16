@@ -180,6 +180,10 @@ details.th th{background:var(--gl);color:var(--gd)}
 .ft{position:relative;z-index:1;background:linear-gradient(180deg,rgba(228,239,208,0),var(--gl))}
 .ft-l{display:flex;justify-content:center;align-items:flex-end;gap:8px;margin-bottom:8px}
 .ft-k{margin-top:4px;font-weight:700;color:var(--gd)}
+.ex.typo{border-color:#c8962b;background:#fdf3da}.sec .ex.typo{border-left-color:#c8962b}
+.tn{margin-top:6px;font-size:15px;color:#7a5410}
+.tw,.tr{font-weight:700;white-space:nowrap}.tw{color:var(--no)}.tr{color:var(--ok)}
+u.tx{text-decoration:none;border-radius:3px;padding:0 2px;font-weight:800}.tw u.tx{background:#f3c9bd}.tr u.tx{background:#cfe8c3}
 </style></head>
 <body>
 <div class="deco" id="deco" aria-hidden="true">
@@ -194,16 +198,59 @@ const ACTS = [];
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const norm=s=>String(s||'').toLowerCase().replace(/[’`]/g,"'").replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();
+const norm=s=>String(s||'').toLowerCase().replace(/[’`]/g,"'").replace(/[.,!?;:]/g,'').replace(/\s+/g,' ').trim();
 const S={ans:{},subs:{},revs:{},drafts:{},ro:false,checked:{},tab:'act',open:null,db:null,owner:false,canWrite:true,local:false,ups:[]};
-const ok=(it,v)=>it.t==='mc'?v===it.a:it.a.some(x=>norm(x)===norm(v));
+// ---- Corrección automática ----
+// Pregunta de reflexión (la corrige la profesora): t:'open' sin respuesta modelo "a", o con refl:true.
+// Todo lo demás se corrige solo. Si una 'open' trae "a" (string o array), se corrige automáticamente.
+const manual=it=>it.t==='open'&&(it.refl===true||!it.a||(Array.isArray(it.a)&&!it.a.length));
+// Tolerancia a errores de tipeo: una letra de más/menos/cambiada o dos letras intercambiadas.
+// No se tolera: palabras de 3 letras o menos, números, cambios de terminación (work/works, play/played),
+// ni confusiones típicas (their/there, its/it's, than/then...), ni palabras reales que aparecen en la actividad.
+const CONF=new Set(["its|it's","than|then","their|there","there|they're","their|they're","your|you're","whose|who's","were|where","were|we're","quiet|quite","advice|advise","affect|effect","accept|except","weather|whether","bought|brought","thought|though","through|though","through|thought","loose|lose","write|wrote","then|than","hear|here","meet|meat","wear|were","know|now","would|could","should|could","which|witch","teach|teacher","build|built","bring|brought","buy|bought"].flatMap(x=>{const[a,b]=x.split('|');return[a+'|'+b,b+'|'+a]}));
+const SUF=new Set(['','s','es','ed','d','ing','ly','ily','er','ier','est','iest','en','ies','ied','y','e','ness','ment','ful','less','al','ation','tion']);
+let VOC=null,VOCN=-1;
+function vocab(){if(VOC&&VOCN===ACTS.length)return VOC;VOC=new Set();VOCN=ACTS.length;
+ const add=x=>{(String(x||'').replace(/<[^>]+>/g,' ').toLowerCase().replace(/[’`]/g,"'").match(/[a-z']+/g)||[]).forEach(w=>VOC.add(w))};
+ ACTS.forEach(a=>{add(a.theory);a.items.forEach(it=>{add(it.q);[].concat(it.a||[]).forEach(y=>add(y));(it.o||[]).forEach(y=>add(y))})});return VOC}
+function dl(a,b){const m=a.length,n=b.length,d=[];for(let i=0;i<=m;i++)d[i]=[i];for(let j=1;j<=n;j++)d[0][j]=j;
+ for(let i=1;i<=m;i++)for(let j=1;j<=n;j++){const c=a[i-1]===b[j-1]?0:1;d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+c);
+  if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])d[i][j]=Math.min(d[i][j],d[i-2][j-2]+1)}return d[m][n]}
+function wordDist(w,t){
+ if(w===t)return 0;
+ if(/\d/.test(w+t))return -1;
+ const L=Math.min(w.length,t.length);if(L<4)return -1;
+ if(CONF.has(w+'|'+t)||vocab().has(w))return -1;
+ const d=dl(w,t);if(d>(L>=9?2:1))return -1;
+ let cp=0;while(cp<L&&w[cp]===t[cp])cp++;
+ let cs=0;while(cs<L-cp&&w[w.length-1-cs]===t[t.length-1-cs])cs++;
+ if(cs===0&&SUF.has(w.slice(cp))&&SUF.has(t.slice(cp)))return -1;
+ return d}
+function fuzzy(v,t){const vw=v.split(' '),tw=t.split(' ');if(vw.length!==tw.length)return null;let tot=0;const fixes=[];
+ for(let i=0;i<vw.length;i++){const d=wordDist(vw[i],tw[i]);if(d<0)return null;if(d){tot+=d;fixes.push([vw[i],tw[i]])}}
+ return tot&&tot<=2?{tot,fixes}:null}
+// k: 'ok' | 'typo' (cuenta como correcta, con aviso) | 'no' | 'blank' | 'manual'
+function grade(it,v){
+ if(manual(it))return{k:'manual'};
+ if(it.t==='mc')return{k:v===it.a?'ok':(v?'no':'blank')};
+ const nv=norm(v);if(!nv)return{k:'blank'};
+ const keys=[].concat(it.a);
+ if(keys.some(x=>norm(x)===nv))return{k:'ok'};
+ let best=null;
+ for(const x of keys){const f=fuzzy(nv,norm(x));if(f&&(!best||f.tot<best.tot))best={tot:f.tot,fixes:f.fixes,ans:x}}
+ return best?{k:'typo',fixes:best.fixes,ans:best.ans}:{k:'no'}}
+const ok=(it,v)=>{const k=grade(it,v).k;return k==='ok'||k==='typo'};
+function diffHTML(w,t){const L=Math.min(w.length,t.length);let cp=0;while(cp<L&&w[cp]===t[cp])cp++;let cs=0;while(cs<L-cp&&w[w.length-1-cs]===t[t.length-1-cs])cs++;
+ const f=x=>esc(x.slice(0,cp))+'<u class="tx">'+(esc(x.slice(cp,x.length-cs))||'_')+'</u>'+esc(x.slice(x.length-cs));return[f(w),f(t)]}
+function typoHTML(fx){return fx.map(([w,t])=>{const[a,b]=diffHTML(w,t);return `<span class="tw">${a}</span> → <span class="tr">${b}</span>`}).join(', ')}
+function typoCount(b){return b.acts.reduce((n,a)=>n+a.items.filter(it=>grade(it,(S.ans[a.id]||{})[it.id]).k==='typo').length,0)}
 
 function lsGet(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
 function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 
 function score(a){const sub=S.subs[a.id],rev=S.revs[a.id];let n=0,pend=0;
  for(const it of a.items){const v=sub?.answers?.[it.id];
-  if(it.t==='open'){const m=rev?.m?.[it.id];if(m)n+=m.ok?1:0;else pend++}
+  if(manual(it)){const m=rev?.m?.[it.id];if(m)n+=m.ok?1:0;else pend++}
   else if(ok(it,v))n++}
  return{n,total:a.items.length,pend}}
 function status(a){const s=S.subs[a.id];if(!s)return['Not started',0];return S.revs[a.id]?['Reviewed',2]:['Submitted',1]}
@@ -212,10 +259,11 @@ function renderItem(a,it,i){
  const v=(S.ans[a.id]||{})[it.id]??'';const chk=S.checked[a.id];const rev=S.revs[a.id]?.m?.[it.id];
  let cls='ex',fb='';
  if(chk){
-  if(it.t==='open'){
+  if(manual(it)){
    if(rev){cls+=rev.ok?' ok':' no';fb=`<div class="fb"><span class="${rev.ok?'good':'bad'}">${rev.ok?'Well done':'Needs review'}</span>${rev.n?' · '+esc(rev.n):''}</div>`}
    else fb='<div class="fb">Submitted. Your teacher will review it.</div>'}
-  else if(ok(it,v)){cls+=' ok';fb='<div class="fb good">Correct!</div>'}
+  else if(grade(it,v).k==='ok'){cls+=' ok';fb='<div class="fb good">Correct!</div>'}
+  else if(grade(it,v).k==='typo'){const g=grade(it,v);cls+=' typo';fb=`<div class="fb good">Correct!</div><div class="tn"><b>Watch your spelling:</b> ${typoHTML(g.fixes)}</div>`}
   else{cls+=' no';fb=`<div class="fb bad">${v?'Not yet.':'You did not answer this one.'}</div><div class="why"><b>Why:</b> ${it.why}<br><small>Review the theory above and try again.</small></div>`}}
  let body='';
  if(it.t==='mc')body=it.o.map(o=>`<label class="opt"><input type="radio" name="${it.id}" value="${esc(o)}" ${v===o?'checked':''} data-q="${it.id}" data-a="${a.id}">${esc(o)}</label>`).join('');
@@ -244,7 +292,7 @@ function viewAct(b){
   const res=ck&&multi?`<div class="card sec-res"><b>Section ${i+1} result:</b> ${s1.n} / ${s1.total}${s1.pend?` · ${s1.pend} open questions waiting for your teacher`:''}</div>`:'';
   return `${i?`<div class="sep">${LOGO(26)}</div>`:''}<section class="sec" id="sec-${i}" style="--sc:${c[0]};--st:${c[1]}">${head}${theory}${a.items.map((it,j)=>renderItem(a,it,j)).join('')}${res}</section>`}).join('');
  const msgs=b.acts.filter(a=>S.revs[a.id]?.c).map(a=>`<div class="why" style="border-color:var(--g)"><b>Message from your teacher${multi?' ('+esc(short(a.title))+')':''}:</b> ${esc(S.revs[a.id].c)}</div>`).join('');
- const sum=chk?`<div class="card"><div class="sc">${sc.n} /${sc.total}</div><p style="margin:4px 0">${sc.pend?'Open questions are waiting for your teacher to review them.':'Fully reviewed.'}</p>${msgs}</div>`:'';
+ const tc=typoCount(b);const sum=chk?`<div class="card"><div class="sc">${sc.n} /${sc.total}</div><p style="margin:4px 0">${sc.pend?'Reflection questions are waiting for your teacher.':'Everything is checked.'}</p>${tc?`<p style="margin:4px 0">${tc} answer${tc>1?'s were':' was'} counted as correct, but with a spelling slip. Look for the orange notes.</p>`:''}${msgs}</div>`:'';
  return `<button class="s" id="back">← Back</button><h2 style="margin-top:14px">${esc(b.title)}</h2><p class="sub">${esc(b.tag)} · ${st}</p>${hint}${jump}${secs}<div class="sep">${LOGO(26)}</div>${sum}${chk?waCard(b):''}${uploadCard({id:b.id})}<div class="row"><button class="p" id="send">${chk?'Check again and submit':'Check and submit'}</button></div>`}
 
 function viewList(){
@@ -269,7 +317,7 @@ function viewTeach(){
  const subs=ACTS.filter(a=>S.subs[a.id]);
  if(!subs.length)return '<h2>Review</h2>'+(viewUps()||'<p class="sub">No activities or uploads have been submitted yet.</p>');
  return '<h2>Review</h2><p class="sub">Mark the open answers and leave notes. Drafts are private: the student and her family only see what you publish.</p>'+viewUps()+subs.map(a=>{const s=S.subs[a.id],r=S.drafts[a.id]||S.revs[a.id]||{};const sc=score(a);
- const opens=a.items.filter(i=>i.t==='open').map(it=>{const m=r.m?.[it.id]||{};
+ const opens=a.items.filter(manual).map(it=>{const m=r.m?.[it.id]||{};
   return `<div class="ex"><p class="q">${it.q}</p><p style="white-space:pre-wrap;margin:6px 0"><b>Answer:</b> ${esc(s.answers?.[it.id]||'(empty)')}</p>
   <div class="row"><label><input type="radio" name="r-${a.id}-${it.id}" value="1" ${m.ok===true?'checked':''}> Good</label><label><input type="radio" name="r-${a.id}-${it.id}" value="0" ${m.ok===false?'checked':''}> Needs work</label></div>
   <input type="text" data-n="${a.id}|${it.id}" placeholder="Note for her (optional)" value="${esc(m.n||'')}" style="margin-top:8px"></div>`}).join('');
@@ -285,9 +333,10 @@ function waMsg(b){const multi=b.acts.length>1,L=['Hi teacher! Here is my work: '
  b.acts.forEach(a=>{const sc=score(a);N+=sc.n;T+=sc.total;P+=sc.pend;
   if(multi)L.push('— '+a.title+' —');
   a.items.forEach((it,i)=>{const v=(S.ans[a.id]||{})[it.id]||'',n=(i+1)+'. ';
-   if(it.t==='open')L.push(n+'(open question) '+(v||'(no answer)'));
+   if(manual(it))L.push(n+'(open question) '+(v||'(no answer)'));
+   else if(grade(it,v).k==='typo')L.push(n+'✅ '+v+' (spelling: '+grade(it,v).fixes.map(f=>f[0]+' → '+f[1]).join(', ')+')');
    else if(ok(it,v))L.push(n+'✅ '+v);
-   else L.push(n+'❌ '+(v||'(no answer)')+' → correct: '+(it.t==='mc'?it.a:it.a[0])+(multi?'':'\n    Why: '+plain(it.why)))});
+   else L.push(n+'❌ '+(v||'(no answer)')+' → correct: '+(it.t==='mc'?it.a:[].concat(it.a)[0])+(multi?'':'\n    Why: '+plain(it.why)))});
   if(multi)L.push('Section score: '+sc.n+'/'+sc.total+(sc.pend?' (+ '+sc.pend+' open to review)':''),'')});
  L.push('Total score: '+N+'/'+T+(P?' (+ '+P+' open to review)':''));return L.join('\n')}
 const waUrl=a=>'https://wa.me/'+WA+'?text='+encodeURIComponent(a?waMsg(a):'Hi teacher!');
@@ -342,7 +391,7 @@ document.addEventListener('click',async e=>{
    if(S.db&&S.canWrite){try{await S.db.doc('subs/'+a.id).set(d)}catch(err){fail=true}}else fail=true}
   S.local=fail;render();window.scrollTo(0,document.body.scrollHeight)}
  else if(t.dataset.save||t.dataset.pub){const pub=!!t.dataset.pub,id=t.dataset.save||t.dataset.pub,r={m:{},c:$('[data-c="'+id+'"]').value};
-  ACTS.find(a=>a.id===id).items.filter(i=>i.t==='open').forEach(it=>{const rd=document.querySelector(`input[name="r-${id}-${it.id}"]:checked`);
+  ACTS.find(a=>a.id===id).items.filter(manual).forEach(it=>{const rd=document.querySelector(`input[name="r-${id}-${it.id}"]:checked`);
    const n=document.querySelector(`[data-n="${id}|${it.id}"]`).value;if(rd)r.m[it.id]={ok:rd.value==='1',n}});
   S.drafts[id]=r;try{await S.db.doc('private/'+id).set(r);if(pub){await S.db.doc('reviews/'+id).set(r);S.revs[id]=r}t.textContent=pub?'Published ✓':'Draft saved ✓'}catch(err){t.textContent='Could not save'}}
 });
