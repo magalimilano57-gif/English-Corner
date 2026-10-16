@@ -3,7 +3,7 @@
     "id": "int-rev-b1-ex1",
     "title": "Section 1: Narrative Tenses (Multiple Choice)",
     "tag": "B1 - Grammar",
-    "block": "Integrative Review · Block 1 (Past)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "Elige el tiempo verbal correcto (Past Simple, Past Continuous o Past Perfect) para completar la historia y las oraciones.",
     "theory": "<p><b>Repaso de Tiempos Narrativos (Clase 1):</b><br>- <b>Past Simple:</b> Acciones principales, terminadas y consecutivas en el pasado.<br>- <b>Past Continuous:</b> Acciones largas o en progreso que fueron interrumpidas (<i>while, when</i>).<br>- <b>Past Perfect:</b> La 'acción más vieja', que ocurrió ANTES que otra acción en el pasado (<i>by the time, already, after</i>).</p>",
     "items": [
@@ -61,7 +61,7 @@
     "id": "int-rev-b1-ex2",
     "title": "Section 2: The Bad Day (Story Completion)",
     "tag": "B1 - Grammar in Context",
-    "block": "Integrative Review · Block 1 (Past)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "Escribe el verbo entre paréntesis en el tiempo narrativo correcto (Past Simple, Past Continuous o Past Perfect).",
     "theory": "<p>Presta atención al contexto de la historia para decidir qué tiempo usar.</p>",
     "items": [
@@ -95,7 +95,7 @@
     "id": "int-rev-b2-ex1",
     "title": "Section 1: Choose the Relative Pronoun",
     "tag": "B1 - Vocabulary & Grammar",
-    "block": "Integrative Review · Block 2 (Relatives)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "Elige el pronombre relativo correcto (who, which, whose, where, when) para cada oración.",
     "theory": "<p><b>Repaso de Relative Clauses (Clase 2):</b><br>- <b>Who / That:</b> Para personas.<br>- <b>Which / That:</b> Para cosas o animales.<br>- <b>Where:</b> Para lugares.<br>- <b>When:</b> Para tiempo.<br>- <b>Whose:</b> Para indicar posesión (cuyo/cuya).</p>",
     "items": [
@@ -153,7 +153,7 @@
     "id": "int-rev-b2-ex2",
     "title": "Section 2: Combine the Sentences",
     "tag": "B1 - Writing",
-    "block": "Integrative Review · Block 2 (Relatives)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "Une las dos oraciones para formar una sola usando un Pronombre Relativo. ¡No repitas el sujeto o el objeto!",
     "theory": "<p><b>Ejemplo:</b><br><i>The man is angry. His car is broken. -> The man <b>whose</b> car is broken is angry.</i></p>",
     "items": [
@@ -181,7 +181,7 @@
     "id": "int-rev-b3-ex1",
     "title": "Section 1: Modals in Context",
     "tag": "B1 - Grammar",
-    "block": "Integrative Review · Block 3 (Modals & Mega Integration)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "Elige el verbo modal correcto para completar cada oración, prestando atención al contexto (obligación, prohibición, consejo o falta de obligación).",
     "theory": "<p><b>Repaso de Modals (Clase 3):</b><br>- <b>Must / Have to:</b> Obligación (reglas o necesidad).<br>- <b>Mustn't:</b> Prohibición estricta (no lo hagas).<br>- <b>Don't have to:</b> No hay obligación (puedes hacerlo si quieres, pero no es necesario).<br>- <b>Should / Ought to:</b> Consejos o recomendaciones.</p>",
     "items": [
@@ -239,7 +239,7 @@
     "id": "int-rev-b3-ex2",
     "title": "Section 2: The Mega Integration (Key Word Transformations)",
     "tag": "B1 - Writing",
-    "block": "Integrative Review · Block 3 (Modals & Mega Integration)",
+    "block": "Integrative Review (Classes 1-3)",
     "inst": "¡El desafío final! Reescribe las oraciones usando la palabra en mayúsculas sin cambiar el significado. Estas oraciones mezclan Pasados, Relativos y Modales.",
     "theory": "<p><b>Instrucciones:</b> Usa todo lo que aprendiste en las Clases 1, 2 y 3. No cambies la palabra entre paréntesis.</p>",
     "items": [
