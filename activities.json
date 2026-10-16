@@ -3,9 +3,9 @@
     "id": "int-rev-b1-ex1",
     "title": "Section 1: Narrative Tenses (Multiple Choice)",
     "tag": "B1 - Grammar",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "Elige el tiempo verbal correcto (Past Simple, Past Continuous o Past Perfect) para completar la historia y las oraciones.",
-    "theory": "<p><b>Repaso de Tiempos Narrativos (Clase 1):</b><br>- <b>Past Simple:</b> Acciones principales, terminadas y consecutivas en el pasado.<br>- <b>Past Continuous:</b> Acciones largas o en progreso que fueron interrumpidas (<i>while, when</i>).<br>- <b>Past Perfect:</b> La 'acción más vieja', que ocurrió ANTES que otra acción en el pasado (<i>by the time, already, after</i>).</p>",
+    "block": "Integrative Review",
+    "inst": "Choose the correct verb tense (Past Simple, Past Continuous, or Past Perfect) to complete the story and the sentences.",
+    "theory": "<p><b>Narrative Tenses Review:</b><br>- <b>Past Simple:</b> Main, completed, and consecutive actions in the past.<br>- <b>Past Continuous:</b> Long actions or actions in progress that were interrupted (<i>while, when</i>).<br>- <b>Past Perfect:</b> The 'oldest action', which happened BEFORE another action in the past (<i>by the time, already, after</i>).</p>",
     "items": [
       {
         "id": "b1e1q1",
@@ -17,7 +17,7 @@
           "had walked"
         ],
         "a": "was walking",
-        "why": "Acción en progreso que fue interrumpida por el ruido (Past Continuous)."
+        "why": "Action in progress interrupted by the noise (Past Continuous)."
       },
       {
         "id": "b1e1q2",
@@ -29,7 +29,7 @@
           "had started"
         ],
         "a": "had started",
-        "why": "La película empezó ANTES de que llegáramos (Past Perfect)."
+        "why": "The movie started BEFORE we arrived (Past Perfect)."
       },
       {
         "id": "b1e1q3",
@@ -41,7 +41,7 @@
           "had had"
         ],
         "a": "had",
-        "why": "Secuencia de acciones cortas y consecutivas en el pasado (Past Simple)."
+        "why": "Sequence of short, consecutive past actions (Past Simple)."
       },
       {
         "id": "b1e1q4",
@@ -53,7 +53,7 @@
           "had done"
         ],
         "a": "was doing",
-        "why": "Dos acciones en progreso al mismo tiempo usando 'while' (Past Continuous)."
+        "why": "Two actions in progress at the same time using 'while' (Past Continuous)."
       }
     ]
   },
@@ -61,33 +61,33 @@
     "id": "int-rev-b1-ex2",
     "title": "Section 2: The Bad Day (Story Completion)",
     "tag": "B1 - Grammar in Context",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "Escribe el verbo entre paréntesis en el tiempo narrativo correcto (Past Simple, Past Continuous o Past Perfect).",
-    "theory": "<p>Presta atención al contexto de la historia para decidir qué tiempo usar.</p>",
+    "block": "Integrative Review",
+    "inst": "Write the verb in brackets in the correct narrative tense (Past Simple, Past Continuous, or Past Perfect).",
+    "theory": "<p>Pay attention to the context of the story to decide which tense to use.</p>",
     "items": [
       {
         "id": "b1e2q1",
         "t": "open",
         "q": "1. Last Monday, I ___ (have) a terrible day at the office.",
-        "why": "Acción pasada terminada que introduce la historia: had."
+        "why": "Finished past action that introduces the story: had."
       },
       {
         "id": "b1e2q2",
         "t": "open",
         "q": "2. I was exhausted because I ___ (not / sleep) well the night before.",
-        "why": "Acción que ocurrió ANTES del lunes: hadn't slept / had not slept."
+        "why": "Action that happened BEFORE Monday: hadn't slept / had not slept."
       },
       {
         "id": "b1e2q3",
         "t": "open",
         "q": "3. While I ___ (prepare) a coffee in the kitchen, my boss called me.",
-        "why": "Acción larga interrumpida: was preparing."
+        "why": "Long interrupted action: was preparing."
       },
       {
         "id": "b1e2q4",
         "t": "open",
         "q": "4. He asked me for the report, but I realized I ___ (forget) it at home!",
-        "why": "Se dio cuenta de algo que había pasado ANTES: had forgotten."
+        "why": "Realized something that had happened BEFORE: had forgotten."
       }
     ]
   },
@@ -95,9 +95,9 @@
     "id": "int-rev-b2-ex1",
     "title": "Section 1: Choose the Relative Pronoun",
     "tag": "B1 - Vocabulary & Grammar",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "Elige el pronombre relativo correcto (who, which, whose, where, when) para cada oración.",
-    "theory": "<p><b>Repaso de Relative Clauses (Clase 2):</b><br>- <b>Who / That:</b> Para personas.<br>- <b>Which / That:</b> Para cosas o animales.<br>- <b>Where:</b> Para lugares.<br>- <b>When:</b> Para tiempo.<br>- <b>Whose:</b> Para indicar posesión (cuyo/cuya).</p>",
+    "block": "Integrative Review",
+    "inst": "Choose the correct relative pronoun (who, which, whose, where, when) for each sentence.",
+    "theory": "<p><b>Relative Clauses Review:</b><br>- <b>Who / That:</b> For people.<br>- <b>Which / That:</b> For things or animals.<br>- <b>Where:</b> For places.<br>- <b>When:</b> For time.<br>- <b>Whose:</b> To indicate possession.</p>",
     "items": [
       {
         "id": "b2e1q1",
@@ -109,7 +109,7 @@
           "whose"
         ],
         "a": "who",
-        "why": "Se refiere a una persona (el doctor)."
+        "why": "Refers to a person (the doctor)."
       },
       {
         "id": "b2e1q2",
@@ -121,7 +121,7 @@
           "where"
         ],
         "a": "which",
-        "why": "Se refiere a una cosa (la carpeta)."
+        "why": "Refers to a thing (the folder)."
       },
       {
         "id": "b2e1q3",
@@ -133,7 +133,7 @@
           "when"
         ],
         "a": "where",
-        "why": "Se refiere a un lugar donde ocurre una acción (el hospital)."
+        "why": "Refers to a place where an action occurs (the hospital)."
       },
       {
         "id": "b2e1q4",
@@ -145,7 +145,7 @@
           "which"
         ],
         "a": "whose",
-        "why": "Indica posesión: el hermano de la chica (whose)."
+        "why": "Indicates possession: the girl's brother (whose)."
       }
     ]
   },
@@ -153,26 +153,26 @@
     "id": "int-rev-b2-ex2",
     "title": "Section 2: Combine the Sentences",
     "tag": "B1 - Writing",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "Une las dos oraciones para formar una sola usando un Pronombre Relativo. ¡No repitas el sujeto o el objeto!",
-    "theory": "<p><b>Ejemplo:</b><br><i>The man is angry. His car is broken. -> The man <b>whose</b> car is broken is angry.</i></p>",
+    "block": "Integrative Review",
+    "inst": "Combine the two sentences into one using a Relative Pronoun. Do not repeat the subject or the object!",
+    "theory": "<p><b>Example:</b><br><i>The man is angry. His car is broken. -> The man <b>whose</b> car is broken is angry.</i></p>",
     "items": [
       {
         "id": "b2e2q1",
         "t": "open",
-        "q": "1. The smartphone is very expensive. I bought it yesterday. (Usa WHICH o THAT)\n-> The smartphone ____________________________ is very expensive.",
+        "q": "1. The smartphone is very expensive. I bought it yesterday. (Use WHICH or THAT)\n-> The smartphone ____________________________ is very expensive.",
         "why": "which/that I bought yesterday"
       },
       {
         "id": "b2e2q2",
         "t": "open",
-        "q": "2. I met a woman. She works as a software engineer. (Usa WHO o THAT)\n-> I met a woman ____________________________.",
+        "q": "2. I met a woman. She works as a software engineer. (Use WHO or THAT)\n-> I met a woman ____________________________.",
         "why": "who/that works as a software engineer"
       },
       {
         "id": "b2e2q3",
         "t": "open",
-        "q": "3. That is the cafe. We had our first date there. (Usa WHERE)\n-> That is the cafe ____________________________.",
+        "q": "3. That is the cafe. We had our first date there. (Use WHERE)\n-> That is the cafe ____________________________.",
         "why": "where we had our first date"
       }
     ]
@@ -181,9 +181,9 @@
     "id": "int-rev-b3-ex1",
     "title": "Section 1: Modals in Context",
     "tag": "B1 - Grammar",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "Elige el verbo modal correcto para completar cada oración, prestando atención al contexto (obligación, prohibición, consejo o falta de obligación).",
-    "theory": "<p><b>Repaso de Modals (Clase 3):</b><br>- <b>Must / Have to:</b> Obligación (reglas o necesidad).<br>- <b>Mustn't:</b> Prohibición estricta (no lo hagas).<br>- <b>Don't have to:</b> No hay obligación (puedes hacerlo si quieres, pero no es necesario).<br>- <b>Should / Ought to:</b> Consejos o recomendaciones.</p>",
+    "block": "Integrative Review",
+    "inst": "Choose the correct modal verb to complete each sentence, paying attention to the context (obligation, prohibition, advice, or lack of obligation).",
+    "theory": "<p><b>Modals Review:</b><br>- <b>Must / Have to:</b> Obligation (rules or necessity).<br>- <b>Mustn't:</b> Strict prohibition (do not do it).<br>- <b>Don't have to:</b> No obligation (you can do it if you want, but it's not necessary).<br>- <b>Should / Ought to:</b> Advice or recommendations.</p>",
     "items": [
       {
         "id": "b3e1q1",
@@ -195,7 +195,7 @@
           "shouldn't"
         ],
         "a": "mustn't",
-        "why": "Es una prohibición estricta indicada por un cartel."
+        "why": "It is a strict prohibition indicated by a sign."
       },
       {
         "id": "b3e1q2",
@@ -207,7 +207,7 @@
           "don't have to"
         ],
         "a": "don't have to",
-        "why": "Falta de obligación; no es necesario levantarse temprano."
+        "why": "Lack of obligation; it is not necessary to wake up early."
       },
       {
         "id": "b3e1q3",
@@ -219,7 +219,7 @@
           "don't have to"
         ],
         "a": "should",
-        "why": "Es un consejo o recomendación fuerte."
+        "why": "It is strong advice or a recommendation."
       },
       {
         "id": "b3e1q4",
@@ -231,7 +231,7 @@
           "can"
         ],
         "a": "have to",
-        "why": "Es una obligación externa impuesta por las reglas de la empresa."
+        "why": "It is an external obligation imposed by company rules."
       }
     ]
   },
@@ -239,33 +239,33 @@
     "id": "int-rev-b3-ex2",
     "title": "Section 2: The Mega Integration (Key Word Transformations)",
     "tag": "B1 - Writing",
-    "block": "Integrative Review (Classes 1-3)",
-    "inst": "¡El desafío final! Reescribe las oraciones usando la palabra en mayúsculas sin cambiar el significado. Estas oraciones mezclan Pasados, Relativos y Modales.",
-    "theory": "<p><b>Instrucciones:</b> Usa todo lo que aprendiste en las Clases 1, 2 y 3. No cambies la palabra entre paréntesis.</p>",
+    "block": "Integrative Review",
+    "inst": "The final challenge! Rewrite the sentences using the word in capital letters without changing the meaning. These sentences mix Past Tenses, Relatives, and Modals.",
+    "theory": "<p><b>Instructions:</b> Use everything you have learned. Do not change the word in brackets.</p>",
     "items": [
       {
         "id": "b3e2q1",
         "t": "open",
         "q": "1. It is strictly prohibited for the students who study here to use phones.\n-> The students who study here ____________________________ phones. (MUSTN'T)",
-        "why": "mustn't use (Combina relativos con prohibición)."
+        "why": "mustn't use (Combines relatives with prohibition)."
       },
       {
         "id": "b3e2q2",
         "t": "open",
         "q": "2. My advice for the man whose car broke down is to take a taxi.\n-> The man whose car broke down ____________________________ a taxi. (SHOULD)",
-        "why": "should take (Combina relativos con consejo)."
+        "why": "should take (Combines relatives with advice)."
       },
       {
         "id": "b3e2q3",
         "t": "open",
         "q": "3. It was not necessary for me to read the book that the teacher recommended.\n-> I ____________________________ the book that the teacher recommended. (HAVE)",
-        "why": "didn't have to read (Combina falta de obligación en PASADO con cláusula relativa)."
+        "why": "didn't have to read (Combines lack of obligation in the PAST with a relative clause)."
       },
       {
         "id": "b3e2q4",
         "t": "open",
         "q": "4. While the doctor was examining the patient, it was a rule to wear gloves.\n-> While the doctor was examining the patient, he ____________________________ gloves. (HAD)",
-        "why": "had to wear (Combina past continuous con obligación en pasado)."
+        "why": "had to wear (Combines past continuous with past obligation)."
       }
     ]
   }
