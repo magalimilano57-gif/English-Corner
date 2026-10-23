@@ -268,5 +268,595 @@
         "why": "had to wear (Combines past continuous with past obligation)."
       }
     ]
+  },
+  {
+    "id": "c4-ex1",
+    "title": "Exercise 1: Choose the Correct Future Form",
+    "tag": "B1 - Grammar",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "Read the contexts carefully and choose the most natural future form (will, going to, or Present Continuous). Pay attention to the evidence or the type of plan!",
+    "theory": "<p><b>A. Expressing the Future (Will vs. Going to vs. Present Continuous)</b></p>\n<p>In English, we don't have just one future tense. We choose the structure based on the context and our intentions.</p>\n<ul>\n  <li><b>WILL + Infinitive:</b> Used for spontaneous decisions made at the moment of speaking (e.g., \"The phone is ringing, I will answer it!\"), promises, and predictions based on personal opinions/beliefs (e.g., \"I think people will live on Mars\").</li>\n  <li><b>BE GOING TO + Infinitive:</b> Used for intentions and plans already made before speaking (e.g., \"I am going to study architecture next year\"), and predictions based on present evidence (e.g., \"Look at those black clouds! It is going to rain\").</li>\n  <li><b>PRESENT CONTINUOUS (am/is/are + -ing):</b> Used for fixed arrangements. This means a plan that is 100% confirmed, usually with a specific time, place, or other people involved. (e.g., \"I am meeting the doctor tomorrow at 5 PM\").</li>\n</ul>",
+    "items": [
+      {
+        "id": "c4e1q1",
+        "t": "mc",
+        "q": "1. A: 'We don't have any milk left!' B: 'Really? I ___ to the supermarket right now.'",
+        "o": [
+          "will go",
+          "am going to go"
+        ],
+        "a": "will go",
+        "why": "Spontaneous decision made at the moment of speaking (will)"
+      },
+      {
+        "id": "c4e1q2",
+        "t": "mc",
+        "q": "2. I can't meet you on Saturday. I ___ tennis with Sarah. We booked the court.",
+        "o": [
+          "will play",
+          "am playing"
+        ],
+        "a": "am playing",
+        "why": "Fixed arrangement already booked (Present Continuous)"
+      },
+      {
+        "id": "c4e1q3",
+        "t": "mc",
+        "q": "3. Do you think people ___ on Mars in the year 2050?",
+        "o": [
+          "will live",
+          "are living"
+        ],
+        "a": "will live",
+        "why": "Prediction based on opinion (will)"
+      },
+      {
+        "id": "c4e1q4",
+        "t": "mc",
+        "q": "4. A: 'The bag looks very heavy, let me help you.' B: 'Thanks! I ___ the small one.'",
+        "o": [
+          "will carry",
+          "am carrying"
+        ],
+        "a": "will carry",
+        "why": "Spontaneous decision / offer (will)"
+      },
+      {
+        "id": "c4e1q5",
+        "t": "mc",
+        "q": "5. My flatmate and I ___ a party next Friday. We have already invited 20 people.",
+        "o": [
+          "will have",
+          "are having"
+        ],
+        "a": "are having",
+        "why": "Fixed arrangement already confirmed (Present Continuous)"
+      },
+      {
+        "id": "c4e1q6",
+        "t": "mc",
+        "q": "6. I feel terrible. My stomach hurts a lot. I think I ___ sick.",
+        "o": [
+          "will be",
+          "am going to be"
+        ],
+        "a": "am going to be",
+        "why": "Prediction based on present evidence (going to)"
+      },
+      {
+        "id": "c4e1q7",
+        "t": "mc",
+        "q": "7. I promise I ___ anyone your secret.",
+        "o": [
+          "won't tell",
+          "am not going to tell"
+        ],
+        "a": "won't tell",
+        "why": "Promise (will / won't)"
+      },
+      {
+        "id": "c4e1q8",
+        "t": "mc",
+        "q": "8. Next week is my mother's birthday. I ___ her flowers, but I haven't gone to the shop yet.",
+        "o": [
+          "will buy",
+          "am going to buy"
+        ],
+        "a": "am going to buy",
+        "why": "Plan or intention decided before speaking (going to)"
+      },
+      {
+        "id": "c4e1q9",
+        "t": "mc",
+        "q": "9. Look at the terrible traffic! We ___ the start of the movie.",
+        "o": [
+          "will miss",
+          "are going to miss"
+        ],
+        "a": "are going to miss",
+        "why": "Prediction based on present evidence (going to)"
+      },
+      {
+        "id": "c4e1q10",
+        "t": "mc",
+        "q": "10. We have our tickets ready! We ___ the 8:00 AM train tomorrow morning.",
+        "o": [
+          "will take",
+          "are taking"
+        ],
+        "a": "are taking",
+        "why": "Fixed arrangement with tickets ready (Present Continuous)"
+      },
+      {
+        "id": "c4e1q11",
+        "t": "mc",
+        "q": "11. I am sure that renewable energy ___ cheaper in the future.",
+        "o": [
+          "will be",
+          "is being"
+        ],
+        "a": "will be",
+        "why": "Prediction based on belief (will)"
+      },
+      {
+        "id": "c4e1q12",
+        "t": "mc",
+        "q": "12. A: 'I forgot my wallet!' B: 'Don't worry, I ___ for the coffee.'",
+        "o": [
+          "will pay",
+          "am going to pay"
+        ],
+        "a": "will pay",
+        "why": "Spontaneous decision / offer (will)"
+      },
+      {
+        "id": "c4e1q13",
+        "t": "mc",
+        "q": "13. My sister ___ from university on Friday at 10 AM.",
+        "o": [
+          "will graduate",
+          "is graduating"
+        ],
+        "a": "is graduating",
+        "why": "Fixed arrangement with a specific day and time (Present Continuous)"
+      },
+      {
+        "id": "c4e1q14",
+        "t": "mc",
+        "q": "14. Look at the battery, it's at 1%! My phone ___.",
+        "o": [
+          "will die",
+          "is going to die"
+        ],
+        "a": "is going to die",
+        "why": "Prediction based on present evidence (going to)"
+      },
+      {
+        "id": "c4e1q15",
+        "t": "mc",
+        "q": "15. Next month, the company ___ a new smart watch.",
+        "o": [
+          "will launch",
+          "is going to launch"
+        ],
+        "a": "is going to launch",
+        "why": "Plan or intention (going to)"
+      }
+    ]
+  },
+  {
+    "id": "c4-ex2",
+    "title": "Exercise 2: First Conditional (Will vs. Modals)",
+    "tag": "B1 - Grammar",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "Complete the First Conditional sentences. Does it need a future prediction (will / won't) or a modal verb for advice or rules (must, should, don't have to, can)? Write both verb forms separated by a comma (e.g., is, will go).",
+    "theory": "<p><b>B. The First Conditional (Real & Possible Situations)</b></p>\n<p>Conditionals are \"If\" sentences. They describe the result of a certain condition. The <b>First Conditional</b> is used to talk about real and highly possible situations in the future.</p>\n<p style=\"text-align:center;\"><b>Structure:</b> If + Present Simple, ... Will + Infinitive</p>\n<ul>\n  <li><b>Example:</b> \"If we recycle more plastic, we <b>will</b> help the environment.\" (This is a real possibility).</li>\n  <li><b>Negative:</b> \"If she <b>doesn't</b> study, she <b>won't</b> pass the exam.\"</li>\n</ul>\n<p><b>C. The Bridge: First Conditional + Modal Verbs</b></p>\n<p>We don't always have to use \"will\" in the result clause. We can use <b>Modal Verbs</b> to give rules, permission, or advice based on a condition!</p>\n<p style=\"text-align:center;\"><b>Structure:</b> If + Present Simple, ... Modal Verb (must / should / can / have to) + Infinitive</p>\n<ul>\n  <li><b>Advice:</b> \"If you have a fever, you <b>should</b> stay at home.\"</li>\n  <li><b>Obligation/Rule:</b> \"If you visit the hospital, you <b>must</b> be quiet.\" / \"If he wants the job, he <b>has to</b> send his CV.\"</li>\n  <li><b>Permission:</b> \"If you finish your homework, you <b>can</b> play video games.\"</li>\n</ul>",
+    "items": [
+      {
+        "id": "c4e2q1",
+        "t": "open",
+        "q": "1. If the weather ___ (be) good tomorrow, we ___ (go) to the beach. (Prediction)",
+        "a": [
+          "is, will go",
+          "is, 'll go",
+          "If the weather is good tomorrow, we will go to the beach.",
+          "If the weather is good tomorrow, we'll go to the beach."
+        ],
+        "why": "Review First Conditional structure for predictions (will)"
+      },
+      {
+        "id": "c4e2q2",
+        "t": "open",
+        "q": "2. If you ___ (feel) tired, you ___ (take) a break. (Advice)",
+        "a": [
+          "feel, should take",
+          "If you feel tired, you should take a break."
+        ],
+        "why": "Review First Conditional using a modal verb for advice (should)"
+      },
+      {
+        "id": "c4e2q3",
+        "t": "open",
+        "q": "3. If students ___ (want) to pass the exam, they ___ (study) hard. (Obligation)",
+        "a": [
+          "want, must study",
+          "want, have to study",
+          "If students want to pass the exam, they must study hard.",
+          "If students want to pass the exam, they have to study hard."
+        ],
+        "why": "Review First Conditional using a modal verb for obligation (must / have to)"
+      },
+      {
+        "id": "c4e2q4",
+        "t": "open",
+        "q": "4. If she ___ (not/hurry), she ___ (miss) the bus! (Prediction)",
+        "a": [
+          "doesn't hurry, will miss",
+          "does not hurry, will miss",
+          "doesn't hurry, 'll miss",
+          "If she doesn't hurry, she will miss the bus!",
+          "If she does not hurry, she will miss the bus!",
+          "If she doesn't hurry, she'll miss the bus!"
+        ],
+        "why": "Review First Conditional negative structure for predictions (won't / will)"
+      },
+      {
+        "id": "c4e2q5",
+        "t": "open",
+        "q": "5. If you ___ (finish) your vegetables, you ___ (eat) some chocolate. (Permission)",
+        "a": [
+          "finish, can eat",
+          "If you finish your vegetables, you can eat some chocolate."
+        ],
+        "why": "Review First Conditional using a modal verb for permission (can)"
+      },
+      {
+        "id": "c4e2q6",
+        "t": "open",
+        "q": "6. If it ___ (rain) tomorrow, you ___ (not/have to) water the garden. (No obligation)",
+        "a": [
+          "rains, don't have to",
+          "rains, do not have to",
+          "If it rains tomorrow, you don't have to water the garden.",
+          "If it rains tomorrow, you do not have to water the garden."
+        ],
+        "why": "Review First Conditional using a modal verb for lack of obligation (don't have to)"
+      },
+      {
+        "id": "c4e2q7",
+        "t": "open",
+        "q": "7. If we ___ (use) less plastic, we ___ (protect) the ocean. (Prediction)",
+        "a": [
+          "use, will protect",
+          "use, 'll protect",
+          "If we use less plastic, we will protect the ocean.",
+          "If we use less plastic, we'll protect the ocean."
+        ],
+        "why": "Review First Conditional structure for predictions (will)"
+      },
+      {
+        "id": "c4e2q8",
+        "t": "open",
+        "q": "8. If you ___ (see) a red traffic light, you ___ (stop) your car immediately. (Strict Rule)",
+        "a": [
+          "see, must stop",
+          "If you see a red traffic light, you must stop your car immediately."
+        ],
+        "why": "Review First Conditional using a modal verb for a strict rule (must)"
+      },
+      {
+        "id": "c4e2q9",
+        "t": "open",
+        "q": "9. If we ___ (not/protect) the forests, many animals ___ (lose) their homes. (Prediction)",
+        "a": [
+          "don't protect, will lose",
+          "do not protect, will lose",
+          "don't protect, 'll lose",
+          "If we don't protect the forests, many animals will lose their homes.",
+          "If we do not protect the forests, many animals will lose their homes.",
+          "If we don't protect the forests, many animals'll lose their homes."
+        ],
+        "why": "Review First Conditional negative structure for predictions (will)"
+      },
+      {
+        "id": "c4e2q10",
+        "t": "open",
+        "q": "10. If the new software ___ (have) bugs, you ___ (report) it to the IT department immediately. (Strict Rule)",
+        "a": [
+          "has, must report",
+          "has, have to report",
+          "If the new software has bugs, you must report it to the IT department immediately.",
+          "If the new software has bugs, you have to report it to the IT department immediately."
+        ],
+        "why": "Review First Conditional using a modal verb for a strict rule (must)"
+      },
+      {
+        "id": "c4e2q11",
+        "t": "open",
+        "q": "11. If you ___ (buy) a smart speaker, you ___ (control) the lights with your voice. (Permission/Ability)",
+        "a": [
+          "buy, can control",
+          "If you buy a smart speaker, you can control the lights with your voice."
+        ],
+        "why": "Review First Conditional using a modal verb for permission or ability (can)"
+      },
+      {
+        "id": "c4e2q12",
+        "t": "open",
+        "q": "12. If they ___ (want) to travel to Europe, they ___ (save) money first. (Advice)",
+        "a": [
+          "want, should save",
+          "If they want to travel to Europe, they should save money first."
+        ],
+        "why": "Review First Conditional using a modal verb for advice (should)"
+      }
+    ]
+  },
+  {
+    "id": "c4-ex3",
+    "title": "Exercise 3: Key Word Transformations",
+    "tag": "B1 - Writing",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "Rewrite the sentences keeping the exact same meaning. Use the word in brackets. This exercise mixes the First Conditional, futures, and modals!",
+    "items": [
+      {
+        "id": "c4e3q1",
+        "t": "open",
+        "q": "1. I advise you to talk to the manager if you have a problem. (SHOULD) -> If you have a problem, you ____________________ to the manager.",
+        "a": [
+          "should talk",
+          "If you have a problem, you should talk to the manager."
+        ],
+        "why": "Use should to give advice"
+      },
+      {
+        "id": "c4e3q2",
+        "t": "open",
+        "q": "2. The company will probably fire him if he is late again. (WILL) -> If he is late again, the company ____________________ him.",
+        "a": [
+          "will probably fire",
+          "If he is late again, the company will probably fire him."
+        ],
+        "why": "Use will for a likely future result"
+      },
+      {
+        "id": "c4e3q3",
+        "t": "open",
+        "q": "3. It is strictly prohibited to use smartphones if you are driving. (MUSTN'T) -> If you are driving, you ____________________ smartphones.",
+        "a": [
+          "mustn't use",
+          "must not use",
+          "If you are driving, you mustn't use smartphones.",
+          "If you are driving, you must not use smartphones."
+        ],
+        "why": "Use mustn't for prohibitions"
+      },
+      {
+        "id": "c4e3q4",
+        "t": "open",
+        "q": "4. I plan to travel to Japan next year. I have the intention. (GOING) -> I ____________________ to Japan next year.",
+        "a": [
+          "am going to travel",
+          "'m going to travel",
+          "I am going to travel to Japan next year.",
+          "I'm going to travel to Japan next year."
+        ],
+        "why": "Use going to for plans and intentions"
+      },
+      {
+        "id": "c4e3q5",
+        "t": "open",
+        "q": "5. It is not necessary for you to wear a tie if you work on Fridays. (HAVE) -> If you work on Fridays, you ____________________ a tie.",
+        "a": [
+          "don't have to wear",
+          "do not have to wear",
+          "If you work on Fridays, you don't have to wear a tie.",
+          "If you work on Fridays, you do not have to wear a tie."
+        ],
+        "why": "Use don't have to for lack of obligation"
+      },
+      {
+        "id": "c4e3q6",
+        "t": "open",
+        "q": "6. Look at those black clouds! I am 100% sure it will rain soon. (GOING) -> Look at those black clouds! It ____________________ soon.",
+        "a": [
+          "is going to rain",
+          "'s going to rain",
+          "Look at those black clouds! It is going to rain soon.",
+          "Look at those black clouds! It's going to rain soon."
+        ],
+        "why": "Use going to for predictions with present evidence"
+      },
+      {
+        "id": "c4e3q7",
+        "t": "open",
+        "q": "7. We have an appointment to meet the doctor at 4 PM tomorrow. (ARE) -> We ____________________ the doctor at 4 PM tomorrow.",
+        "a": [
+          "are meeting",
+          "'re meeting",
+          "We are meeting the doctor at 4 PM tomorrow.",
+          "We're meeting the doctor at 4 PM tomorrow."
+        ],
+        "why": "Use Present Continuous for fixed arrangements"
+      },
+      {
+        "id": "c4e3q8",
+        "t": "open",
+        "q": "8. It is a strict company rule to wear a safety helmet if you enter the factory. (MUST) -> If you enter the factory, you ____________________ a safety helmet.",
+        "a": [
+          "must wear",
+          "If you enter the factory, you must wear a safety helmet."
+        ],
+        "why": "Use must for strict rules and obligations"
+      },
+      {
+        "id": "c4e3q9",
+        "t": "open",
+        "q": "9. I strongly advise you to check the internet connection if the app fails. (SHOULD) -> If the app fails, you ____________________ the internet connection.",
+        "a": [
+          "should check",
+          "If the app fails, you should check the internet connection."
+        ],
+        "why": "Use should to give advice"
+      },
+      {
+        "id": "c4e3q10",
+        "t": "open",
+        "q": "10. It is not necessary for her to buy a new laptop if this one works fine. (HAVE) -> If this one works fine, she ____________________ a new laptop.",
+        "a": [
+          "doesn't have to buy",
+          "does not have to buy",
+          "If this one works fine, she doesn't have to buy a new laptop.",
+          "If this one works fine, she does not have to buy a new laptop."
+        ],
+        "why": "Use doesn't have to for lack of obligation"
+      }
+    ]
+  },
+  {
+    "id": "c4-ex4",
+    "title": "Exercise 4: The Editor's Challenge (Spot the B1 Mistake)",
+    "tag": "B1 - Writing",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "There is ONE grammar mistake in each sentence related to future tenses or the First Conditional. Find it and write the correct sentence.",
+    "items": [
+      {
+        "id": "c4e4q1",
+        "t": "open",
+        "q": "1. If I will see him at the party, I will tell him the good news.",
+        "a": [
+          "If I see him at the party, I will tell him the good news.",
+          "If I see him at the party, I'll tell him the good news."
+        ],
+        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'"
+      },
+      {
+        "id": "c4e4q2",
+        "t": "open",
+        "q": "2. Look at that tree! It will fall down!",
+        "a": [
+          "Look at that tree! It is going to fall down!",
+          "Look at that tree! It's going to fall down!"
+        ],
+        "why": "Review future tenses for predictions based on present evidence"
+      },
+      {
+        "id": "c4e4q3",
+        "t": "open",
+        "q": "3. I promise I am going to help you with your project tomorrow.",
+        "a": [
+          "I promise I will help you with your project tomorrow.",
+          "I promise I'll help you with your project tomorrow."
+        ],
+        "why": "Review future tenses for promises"
+      },
+      {
+        "id": "c4e4q4",
+        "t": "open",
+        "q": "4. If you have a headache, you will take an aspirin.",
+        "a": [
+          "If you have a headache, you should take an aspirin."
+        ],
+        "why": "Use a modal verb for advice instead of a future prediction"
+      },
+      {
+        "id": "c4e4q5",
+        "t": "open",
+        "q": "5. If the robot will break, we will call the engineer.",
+        "a": [
+          "If the robot breaks, we will call the engineer.",
+          "If the robot breaks, we'll call the engineer."
+        ],
+        "why": "Remember the First Conditional rules: do not use 'will' directly after 'if'"
+      },
+      {
+        "id": "c4e4q6",
+        "t": "open",
+        "q": "6. I think that flying cars are going to be normal in 100 years.",
+        "a": [
+          "I think that flying cars will be normal in 100 years.",
+          "I think flying cars will be normal in 100 years."
+        ],
+        "why": "Use will for predictions based on opinion (I think...)"
+      }
+    ]
+  },
+  {
+    "id": "c4-ex5",
+    "title": "Reading: The Future of Smart Cities",
+    "tag": "B1 - Reading",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "Read the article about life in 2050 and answer the questions below.",
+    "theory": "<p><b>The Future of Smart Cities</b></p>\n<p>By the year 2050, over 70% of the world's population will live in urban areas. To manage this growth, governments are going to build \"Smart Cities\". These cities will use artificial intelligence and renewable energy to improve our lifestyle and fight climate change.</p>\n<p>In a Smart City, the house where you live will be completely automated. If you leave the house, the smart devices will automatically turn off the lights and lower the heating. If this system works perfectly, you won't have to worry about wasting electricity. Furthermore, public transport will be self-driving. If everyone uses self-driving electric buses, the air in our cities will be much cleaner.</p>\n<p>However, some experts are worried about security. If technology controls everything, we must protect our digital networks. If a hacker attacks the city's network, the entire transport system will collapse. Technology gives us solutions, but if we want to be safe, we should be prepared.</p>",
+    "theoryTitle": "Read the article",
+    "items": [
+      {
+        "id": "c4e5q1",
+        "t": "open",
+        "q": "1. According to the text, what is the main purpose of building Smart Cities?"
+      },
+      {
+        "id": "c4e5q2",
+        "t": "open",
+        "q": "2. Find and write down a First Conditional sentence that uses \"will/won't\".",
+        "a": [
+          "If you leave the house, the smart devices will automatically turn off the lights and lower the heating.",
+          "If this system works perfectly, you won't have to worry about wasting electricity.",
+          "If everyone uses self-driving electric buses, the air in our cities will be much cleaner.",
+          "If a hacker attacks the city's network, the entire transport system will collapse."
+        ],
+        "why": "First Conditional: If + Present Simple, will / won't + infinitive"
+      },
+      {
+        "id": "c4e5q3",
+        "t": "open",
+        "q": "3. Find and write down a First Conditional sentence that uses a Modal Verb for advice or obligation.",
+        "a": [
+          "If technology controls everything, we must protect our digital networks.",
+          "If we want to be safe, we should be prepared.",
+          "Technology gives us solutions, but if we want to be safe, we should be prepared."
+        ],
+        "why": "First Conditional with a modal verb (must / should)"
+      },
+      {
+        "id": "c4e5q4",
+        "t": "open",
+        "q": "4. What is the relative clause used in the second paragraph to describe the house?",
+        "a": [
+          "where you live",
+          "the house where you live"
+        ],
+        "why": "Relative clause with where (for places)"
+      }
+    ]
+  },
+  {
+    "id": "c4-ex6",
+    "title": "The Environmental Action Plan",
+    "tag": "B1 - Writing",
+    "block": "Class 4: Future and First Conditional",
+    "inst": "Work with your teacher. Imagine you are creating an action plan for your city to fight climate change. Together, write a short paragraph proposing 4 changes. You MUST use the First Conditional combined with future results or modal verbs (e.g., \"If we ban plastic bags, we will...\", \"If citizens want a cleaner city, they must...\").",
+    "items": [
+      {
+        "id": "c4e6q1",
+        "t": "open",
+        "q": "1. If ..."
+      },
+      {
+        "id": "c4e6q2",
+        "t": "open",
+        "q": "2. If ..."
+      },
+      {
+        "id": "c4e6q3",
+        "t": "open",
+        "q": "3. If ..."
+      },
+      {
+        "id": "c4e6q4",
+        "t": "open",
+        "q": "4. If ..."
+      }
+    ]
   }
 ]
